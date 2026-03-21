@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gfonts"
+version = "0.1.0"
+description = "Curated Google Fonts catalog with tagging, querying, and styled text rendering"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "pydantic>=2",
+    "playwright",
+]
+
+[project.scripts]
+gfonts = "gfonts._cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+gfonts = ["data/*.json", "_js/*.js"]

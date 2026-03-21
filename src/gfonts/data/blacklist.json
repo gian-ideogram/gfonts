@@ -1,0 +1,547 @@
+[
+  {
+    "family": "Bitcount",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Grid Double",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Grid Double Ink",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Grid Single",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Grid Single Ink",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Ink",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Prop Double",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Prop Double Ink",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Prop Single",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Prop Single Ink",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Single",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Bitcount Single Ink",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Black And White Picture",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Blaka",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Blaka Hollow",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Blaka Ink",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Bungee Spice",
+    "reason": "chromatic",
+    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
+  },
+  {
+    "family": "Bungee Tint",
+    "reason": "chromatic",
+    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
+  },
+  {
+    "family": "Climate Crisis",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Codystar",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Coral Pixels",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Edu AU VIC WA NT Arrows",
+    "reason": "educational",
+    "reason_description": "Handwriting teaching font with stroke-order arrows or guide dots"
+  },
+  {
+    "family": "Edu AU VIC WA NT Dots",
+    "reason": "educational",
+    "reason_description": "Handwriting teaching font with stroke-order arrows or guide dots"
+  },
+  {
+    "family": "Flow Block",
+    "reason": "placeholder",
+    "reason_description": "Wireframe/redacted placeholder shapes, not legible characters"
+  },
+  {
+    "family": "Flow Circular",
+    "reason": "placeholder",
+    "reason_description": "Wireframe/redacted placeholder shapes, not legible characters"
+  },
+  {
+    "family": "Flow Rounded",
+    "reason": "placeholder",
+    "reason_description": "Wireframe/redacted placeholder shapes, not legible characters"
+  },
+  {
+    "family": "Geostar",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Geostar Fill",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Handjet",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Honk",
+    "reason": "chromatic",
+    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
+  },
+  {
+    "family": "Jacquard 12",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jacquard 12 Charted",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jacquard 24",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jacquard 24 Charted",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jacquarda Bastarda 9",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jacquarda Bastarda 9 Charted",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jaini",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Jaini Purva",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Jersey 10",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jersey 10 Charted",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jersey 15",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jersey 15 Charted",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jersey 20",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jersey 20 Charted",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jersey 25",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Jersey 25 Charted",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Kablammo",
+    "reason": "chromatic",
+    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
+  },
+  {
+    "family": "Kalnia Glaze",
+    "reason": "chromatic",
+    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
+  },
+  {
+    "family": "Kirang Haerang",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Libertinus Keyboard",
+    "reason": "math_symbol",
+    "reason_description": "Math typesetting or keyboard symbol font, not general text"
+  },
+  {
+    "family": "Libertinus Math",
+    "reason": "math_symbol",
+    "reason_description": "Math typesetting or keyboard symbol font, not general text"
+  },
+  {
+    "family": "Libre Barcode 128",
+    "reason": "barcode",
+    "reason_description": "Renders as barcode patterns, not readable text"
+  },
+  {
+    "family": "Libre Barcode 128 Text",
+    "reason": "barcode",
+    "reason_description": "Renders as barcode patterns, not readable text"
+  },
+  {
+    "family": "Libre Barcode 39",
+    "reason": "barcode",
+    "reason_description": "Renders as barcode patterns, not readable text"
+  },
+  {
+    "family": "Libre Barcode 39 Extended",
+    "reason": "barcode",
+    "reason_description": "Renders as barcode patterns, not readable text"
+  },
+  {
+    "family": "Libre Barcode 39 Extended Text",
+    "reason": "barcode",
+    "reason_description": "Renders as barcode patterns, not readable text"
+  },
+  {
+    "family": "Libre Barcode 39 Text",
+    "reason": "barcode",
+    "reason_description": "Renders as barcode patterns, not readable text"
+  },
+  {
+    "family": "Libre Barcode EAN13 Text",
+    "reason": "barcode",
+    "reason_description": "Renders as barcode patterns, not readable text"
+  },
+  {
+    "family": "Micro 5",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Micro 5 Charted",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Miltonian",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Monofett",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Nabla",
+    "reason": "chromatic",
+    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
+  },
+  {
+    "family": "Oi",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Palette Mosaic",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Raleway Dots",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Redacted",
+    "reason": "placeholder",
+    "reason_description": "Wireframe/redacted placeholder shapes, not legible characters"
+  },
+  {
+    "family": "Redacted Script",
+    "reason": "placeholder",
+    "reason_description": "Wireframe/redacted placeholder shapes, not legible characters"
+  },
+  {
+    "family": "Rubik 80s Fade",
+    "reason": "chromatic",
+    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
+  },
+  {
+    "family": "Rubik Beastly",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Broken Fax",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Bubbles",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Burned",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Dirt",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Distressed",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Doodle Triangles",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Gemstones",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Glitch",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Glitch Pop",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Iso",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Lines",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Maps",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Marker Hatch",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Maze",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Microbe",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Moonrocks",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Pixels",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Puddles",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Scribble",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Spray Paint",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Storm",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Vinyl",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Rubik Wet Paint",
+    "reason": "rubik_texture",
+    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
+  },
+  {
+    "family": "Shizuru",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Sixtyfour",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Sixtyfour Convergence",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Stalinist One",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Syne Tactile",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Tilt Prism",
+    "reason": "chromatic",
+    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
+  },
+  {
+    "family": "Train One",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Train One",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Vibes",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Warnes",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Workbench",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  },
+  {
+    "family": "Yarndings 12",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Yarndings 12 Charted",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Yarndings 20",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Yarndings 20 Charted",
+    "reason": "pixel_bitmap",
+    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+  },
+  {
+    "family": "Zen Tokyo Zoo",
+    "reason": "novelty",
+    "reason_description": "Extreme novelty or unreadable decorative font"
+  }
+]

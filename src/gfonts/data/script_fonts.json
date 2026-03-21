@@ -1,0 +1,4766 @@
+[
+  {
+    "family": "Abyssinica SIL",
+    "script": "ethiopic",
+    "script_group": "african",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "ADLaM Display",
+    "script": "adlam",
+    "script_group": "african",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Akatab",
+    "script": "tifinagh",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Alef",
+    "script": "hebrew",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Alkalami",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Almarai",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "300",
+      "400",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Alyamama",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Amiri",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "400i",
+      "700",
+      "700i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Amiri Quran",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Anek Bangla",
+    "script": "bengali",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Anek Devanagari",
+    "script": "devanagari",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Anek Gujarati",
+    "script": "gujarati",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Anek Gurmukhi",
+    "script": "gurmukhi",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Anek Kannada",
+    "script": "kannada",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Anek Malayalam",
+    "script": "malayalam",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Anek Odia",
+    "script": "odia",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Anek Tamil",
+    "script": "tamil",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Anek Telugu",
+    "script": "telugu",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Angkor",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Annapurna SIL",
+    "script": "devanagari",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Aref Ruqaa",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Aref Ruqaa Ink",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Battambang",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Display",
+    "variants": [
+      "100",
+      "300",
+      "400",
+      "700",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Bayon",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Beiruti",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "BIZ UDGothic",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "BIZ UDMincho",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "BIZ UDPGothic",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "BIZ UDPMincho",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Black Han Sans",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Bokor",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Bpmf Huninn",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Bpmf Iansui",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Bpmf Zihi Kai Std",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Cairo",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Cairo Play",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "1000",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Chiron GoRound TC",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Chiron Hei HK",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "200",
+      "200i",
+      "300",
+      "300i",
+      "400",
+      "400i",
+      "500",
+      "500i",
+      "600",
+      "600i",
+      "700",
+      "700i",
+      "800",
+      "800i",
+      "900",
+      "900i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Chiron Sung HK",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "200",
+      "200i",
+      "300",
+      "300i",
+      "400",
+      "400i",
+      "500",
+      "500i",
+      "600",
+      "600i",
+      "700",
+      "700i",
+      "800",
+      "800i",
+      "900",
+      "900i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Chocolate Classical Sans",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Chokokutai",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Cute Font",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Dai Banna SIL",
+    "script": "new_tai_lue",
+    "script_group": "southeast_asian",
+    "category": "Serif",
+    "variants": [
+      "300",
+      "300i",
+      "400",
+      "400i",
+      "500",
+      "500i",
+      "600",
+      "600i",
+      "700",
+      "700i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Dangrek",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Darumadrop One",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "David Libre",
+    "script": "hebrew",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Dela Gothic One",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Do Hyeon",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Dokdo",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "DotGothic16",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "East Sea Dokdo",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "El Messiri",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Fasthand",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Freehand",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Gaegu",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Gamja Flower",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Gothic A1",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Gowun Batang",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Gowun Dodum",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Gulzar",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Hachi Maru Pop",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Hanuman",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Harmattan",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Hi Melody",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Hina Mincho",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Huninn",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Iansui",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "IBM Plex Sans Arabic",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "IBM Plex Sans Devanagari",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "IBM Plex Sans Hebrew",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "IBM Plex Sans JP",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "IBM Plex Sans KR",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "IBM Plex Sans Thai",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "IBM Plex Sans Thai Looped",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Jua",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Kaisei Decol",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Kaisei HarunoUmi",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Kaisei Opti",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Kaisei Tokumin",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Kay Pho Du",
+    "script": "kayah_li",
+    "script_group": "southeast_asian",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Kdam Thmor Pro",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Kedebideri",
+    "script": "beria_erfe",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Kiwi Maru",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "300",
+      "400",
+      "500"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Koh Santepheap",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "300",
+      "400",
+      "700",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Konkhmer Sleokchher",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Kosugi",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Koulen",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Lalezar",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Lateef",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "LINE Seed JP",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "400",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Lisu Bosa",
+    "script": "lisu",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "200",
+      "200i",
+      "300",
+      "300i",
+      "400",
+      "400i",
+      "500",
+      "500i",
+      "600",
+      "600i",
+      "700",
+      "700i",
+      "800",
+      "800i",
+      "900",
+      "900i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Liu Jian Mao Cao",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Long Cang",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "LXGW Marker Gothic",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "LXGW WenKai Mono TC",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Monospace",
+    "variants": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "LXGW WenKai TC",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "300",
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "M PLUS 1p",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "300",
+      "400",
+      "500",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Ma Shan Zheng",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Markazi Text",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Menbere",
+    "script": "ethiopic",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Mingzat",
+    "script": "lepcha",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Miriam Libre",
+    "script": "hebrew",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Mirza",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Mochiy Pop One",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Mochiy Pop P One",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Monomaniac One",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Moul",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Moulpali",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Murecho",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Nanum Brush Script",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Nanum Gothic",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Nanum Gothic Coding",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Nanum Myeongjo",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Nanum Pen Script",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Narnoor",
+    "script": "gunjala_gondi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "New Tegomin",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Nokora",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Kufi Arabic",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Naskh Arabic",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Nastaliq Urdu",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Rashi Hebrew",
+    "script": "hebrew",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Adlam",
+    "script": "adlam",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Adlam Unjoined",
+    "script": "adlam",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Anatolian Hieroglyphs",
+    "script": "anatolian_hieroglyphs",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Arabic",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Armenian",
+    "script": "armenian",
+    "script_group": "caucasian",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Avestan",
+    "script": "avestan",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Balinese",
+    "script": "balinese",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Bamum",
+    "script": "bamum",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Bassa Vah",
+    "script": "bassa_vah",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Batak",
+    "script": "batak",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Bengali",
+    "script": "bengali",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Bhaiksuki",
+    "script": "bhaiksuki",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Brahmi",
+    "script": "brahmi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Buginese",
+    "script": "buginese",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Buhid",
+    "script": "buhid",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Canadian Aboriginal",
+    "script": "canadian_aboriginal",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Carian",
+    "script": "carian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Caucasian Albanian",
+    "script": "caucasian_albanian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Chakma",
+    "script": "chakma",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Cham",
+    "script": "cham",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Cherokee",
+    "script": "cherokee",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Chorasmian",
+    "script": "chorasmian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Coptic",
+    "script": "coptic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Cuneiform",
+    "script": "cuneiform",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Cypriot",
+    "script": "cypriot",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Cypro Minoan",
+    "script": "cypro_minoan",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Deseret",
+    "script": "deseret",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Devanagari",
+    "script": "devanagari",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Duployan",
+    "script": "duployan",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Egyptian Hieroglyphs",
+    "script": "egyptian_hieroglyphs",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Elbasan",
+    "script": "elbasan",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Elymaic",
+    "script": "elymaic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Ethiopic",
+    "script": "ethiopic",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Georgian",
+    "script": "georgian",
+    "script_group": "caucasian",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Glagolitic",
+    "script": "glagolitic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Gothic",
+    "script": "gothic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Grantha",
+    "script": "grantha",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Gujarati",
+    "script": "gujarati",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Gunjala Gondi",
+    "script": "gunjala_gondi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Gurmukhi",
+    "script": "gurmukhi",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Hanifi Rohingya",
+    "script": "hanifi_rohingya",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Hanunoo",
+    "script": "hanunoo",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Hatran",
+    "script": "hatran",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Hebrew",
+    "script": "hebrew",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans HK",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Imperial Aramaic",
+    "script": "imperial_aramaic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Inscriptional Pahlavi",
+    "script": "inscriptional_pahlavi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Inscriptional Parthian",
+    "script": "inscriptional_parthian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Javanese",
+    "script": "javanese",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans JP",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Kaithi",
+    "script": "kaithi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Kannada",
+    "script": "kannada",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Kawi",
+    "script": "kawi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Kayah Li",
+    "script": "kayah_li",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Kharoshthi",
+    "script": "kharoshthi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Khmer",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Khojki",
+    "script": "khojki",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Khudawadi",
+    "script": "khudawadi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans KR",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Lao",
+    "script": "lao",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Lao Looped",
+    "script": "lao",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Lepcha",
+    "script": "lepcha",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Limbu",
+    "script": "limbu",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Linear A",
+    "script": "linear_a",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Linear B",
+    "script": "linear_b",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Lisu",
+    "script": "lisu",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Lydian",
+    "script": "lydian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Mahajani",
+    "script": "mahajani",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Malayalam",
+    "script": "malayalam",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Mandaic",
+    "script": "mandaic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Manichaean",
+    "script": "manichaean",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Marchen",
+    "script": "marchen",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Masaram Gondi",
+    "script": "masaram_gondi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Medefaidrin",
+    "script": "medefaidrin",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Meetei Mayek",
+    "script": "meetei_mayek",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Mende Kikakui",
+    "script": "mende_kikakui",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Meroitic",
+    "script": "meroitic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Miao",
+    "script": "miao",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Modi",
+    "script": "modi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Mongolian",
+    "script": "mongolian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Mro",
+    "script": "mro",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Multani",
+    "script": "multani",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Myanmar",
+    "script": "myanmar",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Nabataean",
+    "script": "nabataean",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Nag Mundari",
+    "script": "nag_mundari",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Nandinagari",
+    "script": "nandinagari",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans New Tai Lue",
+    "script": "new_tai_lue",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Newa",
+    "script": "newa",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans NKo",
+    "script": "nko",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans NKo Unjoined",
+    "script": "nko",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Nushu",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Ogham",
+    "script": "ogham",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Ol Chiki",
+    "script": "ol_chiki",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Old Hungarian",
+    "script": "old_hungarian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Old Italic",
+    "script": "old_italic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Old North Arabian",
+    "script": "old_north_arabian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Old Permic",
+    "script": "old_permic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Old Persian",
+    "script": "old_persian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Old Sogdian",
+    "script": "old_sogdian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Old South Arabian",
+    "script": "old_south_arabian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Old Turkic",
+    "script": "old_turkic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Oriya",
+    "script": "odia",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Osage",
+    "script": "osage",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Osmanya",
+    "script": "osmanya",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Pahawh Hmong",
+    "script": "pahawh_hmong",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Palmyrene",
+    "script": "palmyrene",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Pau Cin Hau",
+    "script": "pau_cin_hau",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans PhagsPa",
+    "script": "phagspa",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Phoenician",
+    "script": "phoenician",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Psalter Pahlavi",
+    "script": "psalter_pahlavi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Rejang",
+    "script": "rejang",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Runic",
+    "script": "runic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Samaritan",
+    "script": "samaritan",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Saurashtra",
+    "script": "saurashtra",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans SC",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Sharada",
+    "script": "sharada",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Shavian",
+    "script": "shavian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Siddham",
+    "script": "siddham",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Sinhala",
+    "script": "sinhala",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Sogdian",
+    "script": "sogdian",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Sora Sompeng",
+    "script": "sora_sompeng",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Soyombo",
+    "script": "soyombo",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Sundanese",
+    "script": "sundanese",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Sunuwar",
+    "script": "sunuwar",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Syloti Nagri",
+    "script": "syloti_nagri",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Syriac",
+    "script": "syriac",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Syriac Eastern",
+    "script": "syriac",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Syriac Western",
+    "script": "syriac",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Tagalog",
+    "script": "tagalog",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Tagbanwa",
+    "script": "tagbanwa",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Tai Le",
+    "script": "tai_le",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Tai Tham",
+    "script": "tai_tham",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Tai Viet",
+    "script": "tai_viet",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Takri",
+    "script": "takri",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Tamil",
+    "script": "tamil",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Tamil Supplement",
+    "script": "tamil",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Tangsa",
+    "script": "tangsa",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans TC",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Telugu",
+    "script": "telugu",
+    "script_group": "indic",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Thaana",
+    "script": "thaana",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Thai",
+    "script": "thai",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Thai Looped",
+    "script": "thai",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Tifinagh",
+    "script": "tifinagh",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Tirhuta",
+    "script": "tirhuta",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Ugaritic",
+    "script": "ugaritic",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Vai",
+    "script": "vai",
+    "script_group": "african",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Vithkuqi",
+    "script": "vithkuqi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Wancho",
+    "script": "wancho",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Warang Citi",
+    "script": "warang_citi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Yi",
+    "script": "yi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Sans Zanabazar Square",
+    "script": "zanabazar_square",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Ahom",
+    "script": "ahom",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Armenian",
+    "script": "armenian",
+    "script_group": "caucasian",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Balinese",
+    "script": "balinese",
+    "script_group": "southeast_asian",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Bengali",
+    "script": "bengali",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Devanagari",
+    "script": "devanagari",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Dives Akuru",
+    "script": "dives_akuru",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Dogra",
+    "script": "dogra",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Ethiopic",
+    "script": "ethiopic",
+    "script_group": "african",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Georgian",
+    "script": "georgian",
+    "script_group": "caucasian",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Grantha",
+    "script": "grantha",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Gujarati",
+    "script": "gujarati",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Gurmukhi",
+    "script": "gurmukhi",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Hebrew",
+    "script": "hebrew",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Hentaigana",
+    "script": "hentaigana",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif HK",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif JP",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Kannada",
+    "script": "kannada",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Khitan Small Script",
+    "script": "khitan",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Khmer",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Khojki",
+    "script": "khojki",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif KR",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Lao",
+    "script": "lao",
+    "script_group": "southeast_asian",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Makasar",
+    "script": "makasar",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Malayalam",
+    "script": "malayalam",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif NP Hmong",
+    "script": "np_hmong",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Old Uyghur",
+    "script": "old_uyghur",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Oriya",
+    "script": "odia",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif SC",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Sinhala",
+    "script": "sinhala",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Tamil",
+    "script": "tamil",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "100i",
+      "200",
+      "200i",
+      "300",
+      "300i",
+      "400",
+      "400i",
+      "500",
+      "500i",
+      "600",
+      "600i",
+      "700",
+      "700i",
+      "800",
+      "800i",
+      "900",
+      "900i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Tangut",
+    "script": "tangut",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif TC",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Telugu",
+    "script": "telugu",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Thai",
+    "script": "thai",
+    "script_group": "southeast_asian",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Tibetan",
+    "script": "tibetan",
+    "script_group": "tibetan",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Todhri",
+    "script": "todhri",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Toto",
+    "script": "toto",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Vithkuqi",
+    "script": "vithkuqi",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Serif Yezidi",
+    "script": "yezidi",
+    "script_group": "historical_rare",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Noto Traditional Nushu",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Nuosu SIL",
+    "script": "yi",
+    "script_group": "historical_rare",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Odor Mean Chey",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Padauk",
+    "script": "myanmar",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Parastoo",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Playpen Sans Arabic",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Handwriting",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Playpen Sans Deva",
+    "script": "devanagari",
+    "script_group": "indic",
+    "category": "Handwriting",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Playpen Sans Hebrew",
+    "script": "hebrew",
+    "script_group": "middle_eastern",
+    "category": "Handwriting",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Playpen Sans Thai",
+    "script": "thai",
+    "script_group": "southeast_asian",
+    "category": "Handwriting",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Poor Story",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Potta One",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Preahvihear",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Qahiri",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Rampart One",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Readex Pro",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Reem Kufi",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Reem Kufi Fun",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Reem Kufi Ink",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Reggae One",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "RocknRoll One",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Ruwudu",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Sawarabi Gothic",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Sawarabi Mincho",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Scheherazade New",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Shippori Antique",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Shippori Antique B1",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Shippori Mincho",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Shippori Mincho B1",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "800"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Slackside One",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Solitreo",
+    "script": "hebrew",
+    "script_group": "middle_eastern",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Stick",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Suwannaphum",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Serif",
+    "variants": [
+      "100",
+      "300",
+      "400",
+      "700",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Tai Heritage Pro",
+    "script": "vietnamese",
+    "script_group": "vietnamese",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "700"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Tajawal",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "200",
+      "300",
+      "400",
+      "500",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Taprom",
+    "script": "khmer",
+    "script_group": "southeast_asian",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Tiro Bangla",
+    "script": "bengali",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "400i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Tiro Devanagari Hindi",
+    "script": "devanagari",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "400i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Tiro Devanagari Marathi",
+    "script": "devanagari",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "400i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Tiro Devanagari Sanskrit",
+    "script": "devanagari",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "400i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Tiro Gurmukhi",
+    "script": "gurmukhi",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "400i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Tiro Kannada",
+    "script": "kannada",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "400i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Tiro Tamil",
+    "script": "tamil",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "400i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Tiro Telugu",
+    "script": "telugu",
+    "script_group": "indic",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "400i"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "UoqMunThenKhung",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Vazirmatn",
+    "script": "arabic",
+    "script_group": "middle_eastern",
+    "category": "Sans Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "WDXL Lubrifont JP N",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "WDXL Lubrifont SC",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "WDXL Lubrifont TC",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Yeon Sung",
+    "script": "korean",
+    "script_group": "cjk",
+    "category": "Display",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Yomogi",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Yuji Boku",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Yuji Hentaigana Akari",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Yuji Hentaigana Akebono",
+    "script": "japanese",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Yuji Mai",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Yuji Syuku",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "ZCOOL KuaiLe",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "ZCOOL QingKe HuangYou",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "ZCOOL XiaoWei",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Zen Antique",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Zen Antique Soft",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Zen Kaku Gothic Antique",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "300",
+      "400",
+      "500",
+      "700",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Zen Kaku Gothic New",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "300",
+      "400",
+      "500",
+      "700",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Zen Kurenaido",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Zen Maru Gothic",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Sans Serif",
+    "variants": [
+      "300",
+      "400",
+      "500",
+      "700",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Zen Old Mincho",
+    "script": "cyrillic",
+    "script_group": "european",
+    "category": "Serif",
+    "variants": [
+      "400",
+      "500",
+      "600",
+      "700",
+      "900"
+    ],
+    "subsets": []
+  },
+  {
+    "family": "Zhi Mang Xing",
+    "script": "chinese",
+    "script_group": "cjk",
+    "category": "Handwriting",
+    "variants": [
+      "400"
+    ],
+    "subsets": []
+  }
+]
