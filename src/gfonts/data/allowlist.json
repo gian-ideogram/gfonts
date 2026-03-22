@@ -1985,23 +1985,7 @@
     "subsets": []
   },
   {
-    "family": "Betania Patmos GDL",
-    "category": "Handwriting",
-    "variants": [
-      "400"
-    ],
-    "subsets": []
-  },
-  {
     "family": "Betania Patmos In",
-    "category": "Handwriting",
-    "variants": [
-      "400"
-    ],
-    "subsets": []
-  },
-  {
-    "family": "Betania Patmos In GDL",
     "category": "Handwriting",
     "variants": [
       "400"
@@ -2171,6 +2155,18 @@
     "subsets": []
   },
   {
+    "family": "Bitcount",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Bitcount Prop Single",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
     "family": "Bitter",
     "category": "Serif",
     "variants": [
@@ -2201,6 +2197,18 @@
     "variants": [
       "400"
     ],
+    "subsets": []
+  },
+  {
+    "family": "Blaka",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Blaka Hollow",
+    "category": "Unknown",
+    "variants": [],
     "subsets": []
   },
   {
@@ -3120,12 +3128,24 @@
     "subsets": []
   },
   {
+    "family": "Climate Crisis",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
     "family": "Coda",
     "category": "Display",
     "variants": [
       "400",
       "800"
     ],
+    "subsets": []
+  },
+  {
+    "family": "Codystar",
+    "category": "Unknown",
+    "variants": [],
     "subsets": []
   },
   {
@@ -6086,6 +6106,12 @@
     "subsets": []
   },
   {
+    "family": "Honk",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
     "family": "Host Grotesk",
     "category": "Sans Serif",
     "variants": [
@@ -6687,6 +6713,12 @@
     "subsets": []
   },
   {
+    "family": "Jaini",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
     "family": "Jaldi",
     "category": "Sans Serif",
     "variants": [
@@ -6701,6 +6733,12 @@
     "variants": [
       "400"
     ],
+    "subsets": []
+  },
+  {
+    "family": "Jersey 20",
+    "category": "Unknown",
+    "variants": [],
     "subsets": []
   },
   {
@@ -6968,6 +7006,12 @@
     "subsets": []
   },
   {
+    "family": "Kalnia Glaze",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
     "family": "Kameron",
     "category": "Serif",
     "variants": [
@@ -7173,6 +7217,12 @@
     "variants": [
       "400"
     ],
+    "subsets": []
+  },
+  {
+    "family": "Kirang Haerang",
+    "category": "Unknown",
+    "variants": [],
     "subsets": []
   },
   {
@@ -9767,6 +9817,12 @@
     "subsets": []
   },
   {
+    "family": "Oi",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
     "family": "Ojuju",
     "category": "Sans Serif",
     "variants": [
@@ -10103,6 +10159,12 @@
       "600",
       "700"
     ],
+    "subsets": []
+  },
+  {
+    "family": "Palette Mosaic",
+    "category": "Unknown",
+    "variants": [],
     "subsets": []
   },
   {
@@ -11727,6 +11789,24 @@
     "subsets": []
   },
   {
+    "family": "Rubik 80s Fade",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Rubik Burned",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Rubik Distressed",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
     "family": "Rubik Doodle Shadow",
     "category": "Display",
     "variants": [
@@ -11735,11 +11815,65 @@
     "subsets": []
   },
   {
+    "family": "Rubik Doodle Triangles",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Rubik Glitch",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Rubik Lines",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Rubik Maze",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
     "family": "Rubik Mono One",
     "category": "Sans Serif",
     "variants": [
       "400"
     ],
+    "subsets": []
+  },
+  {
+    "family": "Rubik Moonrocks",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Rubik Puddles",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Rubik Scribble",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Rubik Vinyl",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
+    "family": "Rubik Wet Paint",
+    "category": "Unknown",
+    "variants": [],
     "subsets": []
   },
   {
@@ -13638,6 +13772,12 @@
     "subsets": []
   },
   {
+    "family": "Tilt Prism",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
     "family": "Tilt Warp",
     "category": "Display",
     "variants": [
@@ -14185,6 +14325,12 @@
     "variants": [
       "400"
     ],
+    "subsets": []
+  },
+  {
+    "family": "Vibes",
+    "category": "Unknown",
+    "variants": [],
     "subsets": []
   },
   {
@@ -14829,6 +14975,12 @@
     "subsets": []
   },
   {
+    "family": "Zen Tokyo Zoo",
+    "category": "Unknown",
+    "variants": [],
+    "subsets": []
+  },
+  {
     "family": "Zeyada",
     "category": "Handwriting",
     "variants": [
@@ -14850,15 +15002,6 @@
       "600i",
       "700",
       "700i"
-    ],
-    "subsets": []
-  },
-  {
-    "family": "Zilla Slab Highlight",
-    "category": "Serif",
-    "variants": [
-      "400",
-      "700"
     ],
     "subsets": []
   }

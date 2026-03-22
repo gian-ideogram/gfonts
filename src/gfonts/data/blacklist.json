@@ -1,8 +1,13 @@
 [
   {
-    "family": "Bitcount",
-    "reason": "pixel_bitmap",
-    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
+    "family": "Betania Patmos GDL",
+    "reason": "manual",
+    "reason_description": "Manually blacklisted"
+  },
+  {
+    "family": "Betania Patmos In GDL",
+    "reason": "manual",
+    "reason_description": "Manually blacklisted"
   },
   {
     "family": "Bitcount Grid Double",
@@ -40,11 +45,6 @@
     "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
   },
   {
-    "family": "Bitcount Prop Single",
-    "reason": "pixel_bitmap",
-    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
-  },
-  {
     "family": "Bitcount Prop Single Ink",
     "reason": "pixel_bitmap",
     "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
@@ -65,16 +65,6 @@
     "reason_description": "Extreme novelty or unreadable decorative font"
   },
   {
-    "family": "Blaka",
-    "reason": "novelty",
-    "reason_description": "Extreme novelty or unreadable decorative font"
-  },
-  {
-    "family": "Blaka Hollow",
-    "reason": "novelty",
-    "reason_description": "Extreme novelty or unreadable decorative font"
-  },
-  {
     "family": "Blaka Ink",
     "reason": "novelty",
     "reason_description": "Extreme novelty or unreadable decorative font"
@@ -88,16 +78,6 @@
     "family": "Bungee Tint",
     "reason": "chromatic",
     "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
-  },
-  {
-    "family": "Climate Crisis",
-    "reason": "novelty",
-    "reason_description": "Extreme novelty or unreadable decorative font"
-  },
-  {
-    "family": "Codystar",
-    "reason": "novelty",
-    "reason_description": "Extreme novelty or unreadable decorative font"
   },
   {
     "family": "Coral Pixels",
@@ -145,11 +125,6 @@
     "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
   },
   {
-    "family": "Honk",
-    "reason": "chromatic",
-    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
-  },
-  {
     "family": "Jacquard 12",
     "reason": "pixel_bitmap",
     "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
@@ -180,11 +155,6 @@
     "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
   },
   {
-    "family": "Jaini",
-    "reason": "novelty",
-    "reason_description": "Extreme novelty or unreadable decorative font"
-  },
-  {
     "family": "Jaini Purva",
     "reason": "novelty",
     "reason_description": "Extreme novelty or unreadable decorative font"
@@ -210,11 +180,6 @@
     "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
   },
   {
-    "family": "Jersey 20",
-    "reason": "pixel_bitmap",
-    "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
-  },
-  {
     "family": "Jersey 20 Charted",
     "reason": "pixel_bitmap",
     "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
@@ -233,16 +198,6 @@
     "family": "Kablammo",
     "reason": "chromatic",
     "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
-  },
-  {
-    "family": "Kalnia Glaze",
-    "reason": "chromatic",
-    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
-  },
-  {
-    "family": "Kirang Haerang",
-    "reason": "novelty",
-    "reason_description": "Extreme novelty or unreadable decorative font"
   },
   {
     "family": "Libertinus Keyboard",
@@ -315,16 +270,6 @@
     "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
   },
   {
-    "family": "Oi",
-    "reason": "novelty",
-    "reason_description": "Extreme novelty or unreadable decorative font"
-  },
-  {
-    "family": "Palette Mosaic",
-    "reason": "novelty",
-    "reason_description": "Extreme novelty or unreadable decorative font"
-  },
-  {
     "family": "Raleway Dots",
     "reason": "novelty",
     "reason_description": "Extreme novelty or unreadable decorative font"
@@ -338,11 +283,6 @@
     "family": "Redacted Script",
     "reason": "placeholder",
     "reason_description": "Wireframe/redacted placeholder shapes, not legible characters"
-  },
-  {
-    "family": "Rubik 80s Fade",
-    "reason": "chromatic",
-    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
   },
   {
     "family": "Rubik Beastly",
@@ -360,32 +300,12 @@
     "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
   },
   {
-    "family": "Rubik Burned",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
     "family": "Rubik Dirt",
     "reason": "rubik_texture",
     "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
   },
   {
-    "family": "Rubik Distressed",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
-    "family": "Rubik Doodle Triangles",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
     "family": "Rubik Gemstones",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
-    "family": "Rubik Glitch",
     "reason": "rubik_texture",
     "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
   },
@@ -400,11 +320,6 @@
     "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
   },
   {
-    "family": "Rubik Lines",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
     "family": "Rubik Maps",
     "reason": "rubik_texture",
     "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
@@ -415,32 +330,12 @@
     "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
   },
   {
-    "family": "Rubik Maze",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
     "family": "Rubik Microbe",
     "reason": "rubik_texture",
     "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
   },
   {
-    "family": "Rubik Moonrocks",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
     "family": "Rubik Pixels",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
-    "family": "Rubik Puddles",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
-    "family": "Rubik Scribble",
     "reason": "rubik_texture",
     "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
   },
@@ -451,16 +346,6 @@
   },
   {
     "family": "Rubik Storm",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
-    "family": "Rubik Vinyl",
-    "reason": "rubik_texture",
-    "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
-  },
-  {
-    "family": "Rubik Wet Paint",
     "reason": "rubik_texture",
     "reason_description": "Rubik variant with texture fill (bubbles, dirt, maze, etc.); unreadable"
   },
@@ -490,22 +375,12 @@
     "reason_description": "Extreme novelty or unreadable decorative font"
   },
   {
-    "family": "Tilt Prism",
-    "reason": "chromatic",
-    "reason_description": "Multi-layer color font (COLR/SVG); broken in SVG rendering pipelines"
-  },
-  {
     "family": "Train One",
     "reason": "novelty",
     "reason_description": "Extreme novelty or unreadable decorative font"
   },
   {
     "family": "Train One",
-    "reason": "novelty",
-    "reason_description": "Extreme novelty or unreadable decorative font"
-  },
-  {
-    "family": "Vibes",
     "reason": "novelty",
     "reason_description": "Extreme novelty or unreadable decorative font"
   },
@@ -540,8 +415,8 @@
     "reason_description": "Pixel art / cross-stitch / LED / dot-matrix glyphs; style baked into shapes"
   },
   {
-    "family": "Zen Tokyo Zoo",
-    "reason": "novelty",
-    "reason_description": "Extreme novelty or unreadable decorative font"
+    "family": "Zilla Slab Highlight",
+    "reason": "manual",
+    "reason_description": "Manually blacklisted"
   }
 ]
