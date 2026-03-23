@@ -461,6 +461,9 @@
     if (s.letter_overrides) {
       for (var oi = 0; oi < s.letter_overrides.length; oi++) {
         var ov = s.letter_overrides[oi];
+        if (ov.outline && ov.outline.width != null) {
+          pad = Math.max(pad, Math.ceil(ov.outline.width) + 4);
+        }
         transformPad = Math.max(transformPad,
           Math.abs(ov.x_offset || 0), Math.abs(ov.y_offset || 0));
         if (ov.scale && ov.scale > 1) {
@@ -1041,6 +1044,15 @@
 
     var overrideMap = buildOverrideMap(s.letter_overrides, rawText.length);
     var hasOverrides = Object.keys(overrideMap).length > 0;
+    var hasOverrideOutlines = false;
+    if (s.letter_overrides) {
+      for (var oii = 0; oii < s.letter_overrides.length; oii++) {
+        if (s.letter_overrides[oii].outline) {
+          hasOverrideOutlines = true;
+          break;
+        }
+      }
+    }
 
     var mainFillStr = resolveFill(defs, s.fill, globalTextMetrics);
 
@@ -1134,6 +1146,9 @@
     function applyFillStroke(node, opts, overrideFill, overrideStroke) {
       var fill = overrideFill || opts.fill || mainFillStr;
       var stroke = overrideStroke || opts.stroke;
+      if (opts.opacity !== undefined) {
+        node.setAttribute('opacity', opts.opacity);
+      }
       if (opts.mode === 'fill') {
         node.setAttribute('fill', fill);
       } else if (opts.mode === 'stroke') {
@@ -1188,6 +1203,10 @@
       for (var k = 0; k < lm.chars.length; k++) {
         var gi = gOff + k;
         var ov = overrideMap[gi];
+        if (opts.strokeOverridesOnly && opts.mode === 'stroke' && !(ov && ov.outline)) {
+          cx += lm.chars[k].advance;
+          continue;
+        }
 
         var t = svgEl('text');
         setAttrs(t, lineFa);
@@ -1216,6 +1235,7 @@
             charOpts = Object.create(opts);
             charOpts.strokeWidth = ov.outline.width;
             charOpts.strokeJoin = ov.outline.join || 'round';
+            charOpts.opacity = ov.outline.opacity != null ? ov.outline.opacity : opts.opacity;
           }
         } else if (opts.mode === 'stroke') {
           charOpts = Object.create(opts);
@@ -1397,6 +1417,17 @@
         outG.setAttribute('data-outline-idx', si);
         rootG.appendChild(outG);
       }
+    }
+    if (hasOverrideOutlines && !(s.outlines && s.outlines.length > 0)) {
+      var overrideOutG = makeTextGroup({
+        mode: 'stroke',
+        stroke: '#000000',
+        strokeWidth: 1,
+        strokeJoin: 'round',
+        strokeOverridesOnly: true,
+      });
+      overrideOutG.setAttribute('data-layer', 'override-outline');
+      rootG.appendChild(overrideOutG);
     }
 
     // ── Layer 5: Fill (with inner shadow / inner glow filter) ───────
