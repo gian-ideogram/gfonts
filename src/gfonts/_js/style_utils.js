@@ -188,7 +188,7 @@
       : (style.letter_overrides || []);
     resolved.line_font_sizes = lineFontSizes;
     resolved.line_scale_y = lineScaleY;
-    resolved.line_text_paths = lineTextPaths;
+    if (lineTextPaths.some(function(v) { return v != null; })) resolved.line_text_paths = lineTextPaths;
     if (hasLineLetterSpacings) resolved.line_letter_spacings = lineLetterSpacings;
     if (hasLineAligns) resolved.line_aligns = lineAligns;
     if (lineRotations.some(function(v) { return v !== 0; })) resolved.line_rotations = lineRotations;

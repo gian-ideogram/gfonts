@@ -517,7 +517,8 @@ def resolve_lines(style_data: dict) -> dict:
     result["letter_overrides"] = letter_overrides
     result["line_font_sizes"] = line_font_sizes
     result["line_scale_y"] = line_scale_y
-    result["line_text_paths"] = line_text_paths
+    if any(tp is not None for tp in line_text_paths):
+        result["line_text_paths"] = line_text_paths
     if any(ls != base_letter_spacing for ls in line_letter_spacings):
         result["line_letter_spacings"] = line_letter_spacings
     if any(a is not None for a in line_aligns):
