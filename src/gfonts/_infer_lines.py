@@ -366,6 +366,9 @@ def resolve_lines(style_data: dict) -> dict:
     line_text_paths: list[dict | None] = []
     line_letter_spacings: list[float] = []
     line_aligns: list[str | None] = []
+    line_rotations: list[float] = []
+    line_x_offsets: list[float] = []
+    line_y_offsets: list[float] = []
     base_letter_spacing = style_data.get("letter_spacing", 0)
     for line in lines:
         if line.get("font_size") is not None:
@@ -380,6 +383,9 @@ def resolve_lines(style_data: dict) -> dict:
             line["letter_spacing"] if line.get("letter_spacing") is not None else base_letter_spacing
         )
         line_aligns.append(line.get("align"))
+        line_rotations.append(line.get("rotation", 0.0))
+        line_x_offsets.append(line.get("x_offset", 0.0))
+        line_y_offsets.append(line.get("y_offset", 0.0))
 
     global_jitter = style_data.get("jitter")
     text_parts: list[str] = []
@@ -409,10 +415,9 @@ def resolve_lines(style_data: dict) -> dict:
             ov: dict[str, Any] = {}
             has_any = False
 
-            for prop in ("x_offset", "y_offset", "rotation", "scale_y"):
-                if line.get(prop) is not None:
-                    ov[prop] = line[prop]
-                    has_any = True
+            if line.get("scale_y") is not None:
+                ov["scale_y"] = line["scale_y"]
+                has_any = True
             if line.get("fill"):
                 ov["fill"] = line["fill"]
                 has_any = True
@@ -517,6 +522,12 @@ def resolve_lines(style_data: dict) -> dict:
         result["line_letter_spacings"] = line_letter_spacings
     if any(a is not None for a in line_aligns):
         result["line_aligns"] = line_aligns
+    if any(r != 0.0 for r in line_rotations):
+        result["line_rotations"] = line_rotations
+    if any(x != 0.0 for x in line_x_offsets):
+        result["line_x_offsets"] = line_x_offsets
+    if any(y != 0.0 for y in line_y_offsets):
+        result["line_y_offsets"] = line_y_offsets
 
     return result
 

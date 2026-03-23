@@ -490,6 +490,18 @@ class TextStyle(BaseModel):
         default=None,
         description="Per-line alignment when rows set lines[].align.",
     )
+    line_rotations: list[float] | None = Field(
+        default=None,
+        description="Per-line rotation in degrees, applied as group transform.",
+    )
+    line_x_offsets: list[float] | None = Field(
+        default=None,
+        description="Per-line horizontal offset in px, applied as group transform.",
+    )
+    line_y_offsets: list[float] | None = Field(
+        default=None,
+        description="Per-line vertical offset in px, applied as group transform.",
+    )
 
     # Global transforms
     rotation: float = Field(

@@ -35,6 +35,9 @@
     var hasLineLetterSpacings = false;
     var lineAligns = [];
     var hasLineAligns = false;
+    var lineRotations = [];
+    var lineXOffsets = [];
+    var lineYOffsets = [];
     for (var lfi = 0; lfi < lines.length; lfi++) {
       var lf = lines[lfi];
       if (lf.font_size != null) lineFontSizes.push(lf.font_size);
@@ -47,6 +50,9 @@
       if (lf.letter_spacing != null) hasLineLetterSpacings = true;
       lineAligns.push(lf.align || null);
       if (lf.align) hasLineAligns = true;
+      lineRotations.push(lf.rotation || 0.0);
+      lineXOffsets.push(lf.x_offset || 0.0);
+      lineYOffsets.push(lf.y_offset || 0.0);
     }
 
     var globalJitter = style.jitter || null;
@@ -82,10 +88,6 @@
         var hasAny = false;
 
         if (!isSpace) {
-          // Omit line-level scale — use line_font_sizes for layout; scale only for parametric
-          if (line.x_offset != null) { ov.x_offset = line.x_offset; hasAny = true; }
-          if (line.y_offset != null) { ov.y_offset = line.y_offset; hasAny = true; }
-          if (line.rotation != null) { ov.rotation = line.rotation; hasAny = true; }
           if (line.scale_y != null) { ov.scale_y = line.scale_y; hasAny = true; }
           if (line.fill) { ov.fill = line.fill; hasAny = true; }
           if (line.outline) { ov.outline = line.outline; hasAny = true; }
@@ -189,6 +191,9 @@
     resolved.line_text_paths = lineTextPaths;
     if (hasLineLetterSpacings) resolved.line_letter_spacings = lineLetterSpacings;
     if (hasLineAligns) resolved.line_aligns = lineAligns;
+    if (lineRotations.some(function(v) { return v !== 0; })) resolved.line_rotations = lineRotations;
+    if (lineXOffsets.some(function(v) { return v !== 0; })) resolved.line_x_offsets = lineXOffsets;
+    if (lineYOffsets.some(function(v) { return v !== 0; })) resolved.line_y_offsets = lineYOffsets;
 
     return resolved;
   }

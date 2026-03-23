@@ -27,162 +27,8 @@
 
   // ── resolve lines format if present ──────────────────────────────
   if (style.lines && !style.text) {
-    style = (typeof FontStyleUtils !== 'undefined' && FontStyleUtils.resolveLines)
-      ? FontStyleUtils.resolveLines(style)
-      : _resolveLines(style);
+    style = FontStyleUtils.resolveLines(style);
     window.__TEXT_STYLE__ = style;
-  }
-
-  function _seededRandom(seed) {
-    var s = seed;
-    return function () {
-      s = (s * 16807 + 0) % 2147483647;
-      return (s - 1) / 2147483646;
-    };
-  }
-
-  function _resolveLines(st) {
-    var lines = st.lines || [];
-    var globalJitter = st.jitter || null;
-    var textParts = [];
-    var letterOverrides = [];
-    var globalIdx = 0;
-
-    for (var li = 0; li < lines.length; li++) {
-      var line = lines[li];
-      var lineText = line.text || '';
-      if (li > 0) globalIdx++;
-
-      var lineJitter = line.jitter || globalJitter;
-      var words = [];
-      var inWord = false, wordStart = 0, wordIdx = 0;
-      for (var ci = 0; ci < lineText.length; ci++) {
-        if (lineText[ci] !== ' ') {
-          if (!inWord) { wordStart = ci; inWord = true; }
-        } else {
-          if (inWord) { words.push({ start: wordStart, end: ci - 1, idx: wordIdx++ }); inWord = false; }
-        }
-      }
-      if (inWord) words.push({ start: wordStart, end: lineText.length - 1, idx: wordIdx });
-
-      var visPos = 0;
-      var jitterRng = lineJitter ? _seededRandom((lineJitter.seed || 0) + li * 1000) : null;
-
-      for (var ci2 = 0; ci2 < lineText.length; ci2++) {
-        var gi = globalIdx + ci2;
-        if (lineText[ci2] === ' ') continue;
-        var ov = {};
-        var hasAny = false;
-
-        // Omit line-level scale — use line_font_sizes for layout; scale only for parametric
-        if (line.x_offset != null) { ov.x_offset = line.x_offset; hasAny = true; }
-        if (line.y_offset != null) { ov.y_offset = line.y_offset; hasAny = true; }
-        if (line.rotation != null) { ov.rotation = line.rotation; hasAny = true; }
-        if (line.scale_y != null) { ov.scale_y = line.scale_y; hasAny = true; }
-        if (line.fill) { ov.fill = line.fill; hasAny = true; }
-        if (line.outline) { ov.outline = line.outline; hasAny = true; }
-
-        if (line.words) {
-          for (var wi = 0; wi < line.words.length; wi++) {
-            var wo = line.words[wi];
-            var w = words[wo.index];
-            if (w && ci2 >= w.start && ci2 <= w.end) {
-              if (wo.scale != null) { ov.scale = wo.scale; hasAny = true; }
-              if (wo.x_offset != null) { ov.x_offset = wo.x_offset; hasAny = true; }
-              if (wo.y_offset != null) { ov.y_offset = wo.y_offset; hasAny = true; }
-              if (wo.rotation != null) { ov.rotation = wo.rotation; hasAny = true; }
-              if (wo.fill) { ov.fill = wo.fill; hasAny = true; }
-              if (wo.outline) { ov.outline = wo.outline; hasAny = true; }
-            }
-          }
-        }
-
-        if (line.first_letter && visPos === 0) {
-          var fl = line.first_letter;
-          if (fl.scale != null) { ov.scale = fl.scale; hasAny = true; }
-          if (fl.x_offset != null) { ov.x_offset = fl.x_offset; hasAny = true; }
-          if (fl.y_offset != null) { ov.y_offset = fl.y_offset; hasAny = true; }
-          if (fl.rotation != null) { ov.rotation = fl.rotation; hasAny = true; }
-          if (fl.fill) { ov.fill = fl.fill; hasAny = true; }
-          if (fl.outline) { ov.outline = fl.outline; hasAny = true; }
-        }
-
-        if (line.fill_cycle) {
-          var cycleFill = line.fill_cycle[visPos % line.fill_cycle.length];
-          if (cycleFill) {
-            ov.fill = typeof cycleFill === 'string' ? { type: 'solid', color: cycleFill } : cycleFill;
-            hasAny = true;
-          }
-        }
-
-        if (line.overrides) {
-          for (var oi = 0; oi < line.overrides.length; oi++) {
-            var lo = line.overrides[oi];
-            var matched = false;
-            if (lo.start !== undefined && lo.end !== undefined) matched = ci2 >= lo.start && ci2 <= lo.end;
-            else if (lo.indices) matched = lo.indices.indexOf(ci2) >= 0;
-            if (matched) {
-              if (lo.scale != null) { ov.scale = lo.scale; hasAny = true; }
-              if (lo.x_offset != null) { ov.x_offset = lo.x_offset; hasAny = true; }
-              if (lo.y_offset != null) { ov.y_offset = lo.y_offset; hasAny = true; }
-              if (lo.rotation != null) { ov.rotation = lo.rotation; hasAny = true; }
-              if (lo.fill) { ov.fill = lo.fill; hasAny = true; }
-              if (lo.outline) { ov.outline = lo.outline; hasAny = true; }
-            }
-          }
-        }
-
-        if (lineJitter && jitterRng) {
-          if (lineJitter.rotation) { ov.rotation = Math.round((jitterRng() * 2 - 1) * lineJitter.rotation * 10) / 10; hasAny = true; }
-          if (lineJitter.x_offset) { var xo = (jitterRng() * 2 - 1) * lineJitter.x_offset; ov.x_offset = Math.round(((ov.x_offset || 0) + xo) * 10) / 10; hasAny = true; }
-          if (lineJitter.y_offset) { var yo = (jitterRng() * 2 - 1) * lineJitter.y_offset; ov.y_offset = Math.round(((ov.y_offset || 0) + yo) * 10) / 10; hasAny = true; }
-          if (lineJitter.scale) { var sc = 1.0 + (jitterRng() * 2 - 1) * (lineJitter.scale - 1.0); ov.scale = Math.round(((ov.scale || 1.0) * sc) * 100) / 100; hasAny = true; }
-        }
-
-        if (hasAny) letterOverrides.push(Object.assign({ indices: [gi] }, ov));
-        visPos++;
-      }
-
-      textParts.push(lineText);
-      globalIdx += lineText.length;
-    }
-
-    var resolved = {};
-    for (var k in st) {
-      if (k !== 'lines' && k !== 'jitter') resolved[k] = st[k];
-    }
-    resolved.text = textParts.join('\n');
-    resolved.letter_overrides = letterOverrides.length
-      ? letterOverrides
-      : (st.letter_overrides || []);
-    var baseFontSize = st.font_size != null ? st.font_size : 100;
-    var lineFontSizes = [];
-    var lineScaleY = [];
-    var lineTextPaths = [];
-    var baseLetterSpacing = st.letter_spacing || 0;
-    var lineLetterSpacings = [];
-    var hasLineLetterSpacings = false;
-    var lineAligns = [];
-    var hasLineAligns = false;
-    for (var lfi = 0; lfi < lines.length; lfi++) {
-      var lf = lines[lfi];
-      if (lf.font_size != null) lineFontSizes.push(lf.font_size);
-      else if (lf.scale != null) lineFontSizes.push(baseFontSize * lf.scale);
-      else lineFontSizes.push(baseFontSize);
-      lineScaleY.push(lf.scale_y != null ? lf.scale_y : 1.0);
-      lineTextPaths.push(lf.text_path || null);
-      var lls = lf.letter_spacing != null ? lf.letter_spacing : baseLetterSpacing;
-      lineLetterSpacings.push(lls);
-      if (lf.letter_spacing != null) hasLineLetterSpacings = true;
-      lineAligns.push(lf.align || null);
-      if (lf.align) hasLineAligns = true;
-    }
-    resolved.line_font_sizes = lineFontSizes;
-    resolved.line_scale_y = lineScaleY;
-    resolved.line_text_paths = lineTextPaths;
-    if (hasLineLetterSpacings) resolved.line_letter_spacings = lineLetterSpacings;
-    if (hasLineAligns) resolved.line_aligns = lineAligns;
-    return resolved;
   }
 
   var NS = 'http://www.w3.org/2000/svg';
@@ -920,9 +766,22 @@
     }
   }
 
-  function _lineGroupWrapper(parent, lineIdx) {
+  function _lineGroupWrapper(parent, lineIdx, lx, ly, lm, lineTransforms) {
     var lg = svgEl('g');
     lg.setAttribute('data-line-idx', lineIdx);
+    if (lineTransforms) {
+      var r = lineTransforms.rotations && lineTransforms.rotations[lineIdx] ? lineTransforms.rotations[lineIdx] : 0;
+      var dx = lineTransforms.xOffsets && lineTransforms.xOffsets[lineIdx] ? lineTransforms.xOffsets[lineIdx] : 0;
+      var dy = lineTransforms.yOffsets && lineTransforms.yOffsets[lineIdx] ? lineTransforms.yOffsets[lineIdx] : 0;
+      if (r || dx || dy) {
+        var cx = lx + (lm ? lm.totalWidth / 2 : 0);
+        var cy = ly - (lm ? lm.ascent : 0) + (lm ? lm.height / 2 : 0);
+        var parts = [];
+        if (dx || dy) parts.push('translate(' + dx + ',' + dy + ')');
+        if (r) parts.push('rotate(' + r + ',' + cx + ',' + cy + ')');
+        lg.setAttribute('transform', parts.join(' '));
+      }
+    }
     parent.appendChild(lg);
     return lg;
   }
@@ -938,6 +797,12 @@
     var lineLetterSpacings = s.line_letter_spacings || null;
     var align = s.align || 'center';
     var lineAligns = s.line_aligns || null;
+    var lineRotations = s.line_rotations || null;
+    var lineXOffsets = s.line_x_offsets || null;
+    var lineYOffsets = s.line_y_offsets || null;
+    var lineTransforms = (lineRotations || lineXOffsets || lineYOffsets)
+      ? { rotations: lineRotations, xOffsets: lineXOffsets, yOffsets: lineYOffsets }
+      : null;
     var fontSize = s.font_size || 100;
     var fontFamily = s.font_family || 'Lato';
 
@@ -1114,7 +979,7 @@
       forEachLine(lines, multiMetrics, pad, align, function (lineText, lm, lx, ly, lineIdx, gOff) {
         var ox = lx + rotOffX + ox0;
         var oy = ly + rotOffY + oy0;
-        var lineG = _lineGroupWrapper(g, lineIdx);
+        var lineG = _lineGroupWrapper(g, lineIdx, ox, oy, lm, lineTransforms);
 
         if (needsPerChar || (getWarpFn && getWarpFn(lineIdx))) {
           addCharsWithOverrides(lineG, lm, ox, oy, gOff, opts, lineIdx);
