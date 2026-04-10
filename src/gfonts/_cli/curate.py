@@ -28,14 +28,16 @@ def _load_fonts(data_dir: Path) -> list[dict]:
     for f in allow:
         all_fonts.append({
             "family": f["family"], "category": f["category"],
-            "variants": f.get("variants", []), "status": "allowed",
+            "variants": f.get("variants", []), "tags": f.get("tags", []),
+            "status": "allowed",
             "script": "latin", "script_group": "latin",
             "reason": None, "reason_description": None,
         })
     for f in script_fonts:
         all_fonts.append({
             "family": f["family"], "category": f["category"],
-            "variants": f.get("variants", []), "status": "script",
+            "variants": f.get("variants", []), "tags": f.get("tags", []),
+            "status": "script",
             "script": f["script"], "script_group": f["script_group"],
             "reason": None, "reason_description": None,
         })
@@ -43,7 +45,7 @@ def _load_fonts(data_dir: Path) -> list[dict]:
         fam = e["family"]
         all_fonts.append({
             "family": fam, "category": "Unknown",
-            "variants": [],
+            "variants": [], "tags": [],
             "status": "blacklisted", "script": None, "script_group": None,
             "reason": e.get("reason"), "reason_description": e.get("reason_description"),
         })
@@ -91,6 +93,12 @@ def _build_page(fonts: list[dict]) -> str:
         f'<button class="filter-btn script-group-btn" data-script-group="{g}">'
         f'{_SCRIPT_GROUP_META.get(g, {}).get("label", g)}</button>'
         for g in groups_used
+    )
+
+    all_tags = sorted({t for f in fonts for t in f.get("tags", [])})
+    tag_btns = "".join(
+        f'<button class="filter-btn tag-btn" data-tag="{t}">{t}</button>'
+        for t in all_tags
     )
 
     fonts_json = json.dumps(fonts)
@@ -143,6 +151,10 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f5f6f8; c
 .font-tag { min-width: 100px; font-size: 10px; text-align: right; padding: 2px 6px; border-radius: 3px; white-space: nowrap; }
 .font-tag.tag-script { background: #ebf5fb; color: #2980b9; }
 .font-tag.tag-reason { background: #fdedec; color: #c0392b; }
+.font-tags { display: flex; gap: 3px; flex-wrap: wrap; min-width: 180px; justify-content: flex-end; }
+.font-tags .tag-pill { font-size: 9px; padding: 1px 5px; border-radius: 3px; background: #eef2f7; color: #555; white-space: nowrap; }
+.font-tags .tag-pill.aesthetic { background: #f0e6ff; color: #6c3fa0; }
+.font-tags .tag-pill.usecase { background: #e6f7ee; color: #1a7a42; }
 .toast { position: fixed; bottom: 24px; right: 24px; padding: 10px 20px; border-radius: 6px; color: #fff; font-size: 13px; font-weight: 500; opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 200; }
 .toast.show { opacity: 1; }
 .toast.success { background: #27ae60; }
@@ -183,6 +195,14 @@ body { font-family: system-ui, -apple-system, sans-serif; background: #f5f6f8; c
         + """
     </div>
   </div>
+  <div class="topbar-row">
+    <span class="filter-label">Tags</span>
+    <div class="filters" id="tagFilters">
+      """
+        + tag_btns
+        + """
+    </div>
+  </div>
 </div>
 
 <div class="container" id="container"></div>
@@ -199,6 +219,8 @@ let dirty = false;
 let activeStatus = 'all';
 let activeCat = null;
 let activeScriptGroup = null;
+let activeTag = null;
+const USECASE_TAGS = new Set(['heading','body','logo','caption','editorial','UI','signage','branding']);
 
 function showToast(msg, type) {
   const t = document.getElementById('toast');
@@ -218,12 +240,13 @@ function render() {
   const rows = document.querySelectorAll('.font-row');
   rows.forEach(function(row, i) {
     const f = FONTS[i];
-    const matchQ = !q || f.family.toLowerCase().includes(q) || (f.script && f.script.includes(q));
+    const matchQ = !q || f.family.toLowerCase().includes(q) || (f.script && f.script.includes(q)) || (f.tags && f.tags.some(function(t) { return t.includes(q); }));
     const matchStatus = activeStatus === 'all' || f.status === activeStatus;
     const matchCat = !activeCat || f.category === activeCat;
     const matchScript = !activeScriptGroup || f.script_group === activeScriptGroup;
-    row.classList.toggle('hidden', !(matchQ && matchStatus && matchCat && matchScript));
-    if (matchQ && matchStatus && matchCat && matchScript) shown++;
+    const matchTag = !activeTag || (f.tags && f.tags.includes(activeTag));
+    row.classList.toggle('hidden', !(matchQ && matchStatus && matchCat && matchScript && matchTag));
+    if (matchQ && matchStatus && matchCat && matchScript && matchTag) shown++;
   });
   document.getElementById('stats').textContent =
     shown + ' shown \\u00b7 ' + nAllowed + ' allowed \\u00b7 ' + nScript + ' script \\u00b7 ' + nBlocked + ' blocked';
@@ -283,6 +306,14 @@ function buildRows() {
     } else {
       tagHtml = '<span class="font-tag"></span>';
     }
+    var tagsHtml = '<span class="font-tags">';
+    if (f.tags) {
+      for (var j = 0; j < f.tags.length; j++) {
+        var pillCls = USECASE_TAGS.has(f.tags[j]) ? 'tag-pill usecase' : 'tag-pill aesthetic';
+        tagsHtml += '<span class="' + pillCls + '">' + f.tags[j] + '</span>';
+      }
+    }
+    tagsHtml += '</span>';
     html.push(
       '<div class="font-row ' + cls + '">' +
       '<div class="status-btn">' +
@@ -293,6 +324,7 @@ function buildRows() {
       '<span class="font-name">' + f.family + '</span>' +
       "<span class=\\"font-sample\\" style=\\"font-family:'" + safe + "',sans-serif\\">Handgloves & Skyz</span>" +
       '<span class="font-cat">' + f.category + '</span>' +
+      tagsHtml +
       tagHtml +
       '</div>'
     );
@@ -312,10 +344,10 @@ function saveChanges() {
   saveBtn.textContent = 'Saving...';
   var payload = {
     allowlist: FONTS.filter(function(f) { return f.status === 'allowed'; }).map(function(f) {
-      return { family: f.family, category: f.category, variants: f.variants, subsets: [] };
+      return { family: f.family, category: f.category, variants: f.variants, subsets: [], tags: f.tags || [] };
     }),
     script_fonts: FONTS.filter(function(f) { return f.status === 'script'; }).map(function(f) {
-      return { family: f.family, script: f.script, script_group: f.script_group, category: f.category, variants: f.variants, subsets: [] };
+      return { family: f.family, script: f.script, script_group: f.script_group, category: f.category, variants: f.variants, subsets: [], tags: f.tags || [] };
     }),
     blacklist: FONTS.filter(function(f) { return f.status === 'blacklisted'; }).map(function(f) {
       return { family: f.family, reason: f.reason || 'manual', reason_description: f.reason_description || 'Manually blacklisted' };
@@ -362,6 +394,13 @@ document.querySelectorAll('#scriptFilters .filter-btn').forEach(function(btn) {
   btn.addEventListener('click', function() {
     if (btn.classList.contains('active')) { btn.classList.remove('active'); activeScriptGroup = null; }
     else { document.querySelectorAll('#scriptFilters .filter-btn').forEach(function(b) { b.classList.remove('active'); }); btn.classList.add('active'); activeScriptGroup = btn.dataset.scriptGroup; }
+    render();
+  });
+});
+document.querySelectorAll('#tagFilters .filter-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    if (btn.classList.contains('active')) { btn.classList.remove('active'); activeTag = null; }
+    else { document.querySelectorAll('#tagFilters .filter-btn').forEach(function(b) { b.classList.remove('active'); }); btn.classList.add('active'); activeTag = btn.dataset.tag; }
     render();
   });
 });
@@ -431,7 +470,8 @@ def _make_handler(data_dir: Path) -> type:
             self.wfile.write(json.dumps(data).encode())
 
         def log_message(self, fmt, *args):
-            if "/api/" in (args[0] if args else ""):
+            first = str(args[0]) if args else ""
+            if "/api/" in first:
                 super().log_message(fmt, *args)
 
     return _Handler

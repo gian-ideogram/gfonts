@@ -7,7 +7,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "ADLaM Display",
@@ -17,7 +20,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Akatab",
@@ -32,7 +39,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Alef",
@@ -43,7 +53,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Alkalami",
@@ -53,7 +66,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Almarai",
@@ -66,7 +82,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Alyamama",
@@ -82,7 +101,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Amiri",
@@ -95,7 +117,10 @@
       "700",
       "700i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Amiri Quran",
@@ -105,7 +130,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Anek Bangla",
@@ -122,7 +150,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Anek Devanagari",
@@ -139,7 +170,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Anek Gujarati",
@@ -156,7 +190,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Anek Gurmukhi",
@@ -173,7 +210,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Anek Kannada",
@@ -190,7 +230,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Anek Malayalam",
@@ -207,7 +250,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Anek Odia",
@@ -224,7 +270,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Anek Tamil",
@@ -241,7 +290,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Anek Telugu",
@@ -258,7 +310,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Angkor",
@@ -268,7 +323,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Annapurna SIL",
@@ -279,7 +338,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Aref Ruqaa",
@@ -290,7 +352,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Aref Ruqaa Ink",
@@ -301,7 +366,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Battambang",
@@ -315,7 +383,11 @@
       "700",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Bayon",
@@ -325,7 +397,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Beiruti",
@@ -342,7 +417,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "BIZ UDGothic",
@@ -353,7 +431,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "BIZ UDMincho",
@@ -364,7 +445,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "BIZ UDPGothic",
@@ -375,7 +459,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "BIZ UDPMincho",
@@ -386,7 +473,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Black Han Sans",
@@ -396,7 +486,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Bokor",
@@ -406,7 +499,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Bpmf Huninn",
@@ -416,7 +513,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Bpmf Iansui",
@@ -426,7 +526,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Bpmf Zihi Kai Std",
@@ -436,7 +540,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Cairo",
@@ -454,7 +561,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Cairo Play",
@@ -472,7 +582,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Chiron GoRound TC",
@@ -489,7 +602,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Chiron Hei HK",
@@ -514,7 +630,10 @@
       "900",
       "900i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Chiron Sung HK",
@@ -539,7 +658,10 @@
       "900",
       "900i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Chocolate Classical Sans",
@@ -549,7 +671,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Chokokutai",
@@ -559,7 +684,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Cute Font",
@@ -569,7 +698,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Dai Banna SIL",
@@ -588,7 +721,10 @@
       "700",
       "700i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Dangrek",
@@ -598,7 +734,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Darumadrop One",
@@ -608,7 +748,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "David Libre",
@@ -620,7 +764,10 @@
       "500",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Dela Gothic One",
@@ -630,7 +777,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Do Hyeon",
@@ -640,7 +791,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Dokdo",
@@ -650,7 +804,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "DotGothic16",
@@ -660,7 +818,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "East Sea Dokdo",
@@ -670,7 +831,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "El Messiri",
@@ -683,7 +848,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Fasthand",
@@ -693,7 +861,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Freehand",
@@ -703,7 +875,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Gaegu",
@@ -715,7 +891,11 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Gamja Flower",
@@ -725,7 +905,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Gothic A1",
@@ -743,7 +927,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Gowun Batang",
@@ -754,7 +941,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Gowun Dodum",
@@ -764,7 +954,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Gulzar",
@@ -774,7 +967,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Hachi Maru Pop",
@@ -784,7 +980,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Hanuman",
@@ -802,7 +1002,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Harmattan",
@@ -815,7 +1018,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Hi Melody",
@@ -825,7 +1031,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Hina Mincho",
@@ -835,7 +1045,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Huninn",
@@ -845,7 +1058,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Iansui",
@@ -855,7 +1071,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "IBM Plex Sans Arabic",
@@ -871,7 +1091,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "IBM Plex Sans Devanagari",
@@ -887,7 +1110,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "IBM Plex Sans Hebrew",
@@ -903,7 +1129,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "IBM Plex Sans JP",
@@ -919,7 +1148,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "IBM Plex Sans KR",
@@ -935,7 +1167,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "IBM Plex Sans Thai",
@@ -951,7 +1186,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "IBM Plex Sans Thai Looped",
@@ -967,7 +1205,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Jua",
@@ -977,7 +1218,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Kaisei Decol",
@@ -989,7 +1233,10 @@
       "500",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Kaisei HarunoUmi",
@@ -1001,7 +1248,10 @@
       "500",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Kaisei Opti",
@@ -1013,7 +1263,10 @@
       "500",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Kaisei Tokumin",
@@ -1026,7 +1279,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Kay Pho Du",
@@ -1039,7 +1295,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Kdam Thmor Pro",
@@ -1049,7 +1308,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Kedebideri",
@@ -1064,7 +1326,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Kiwi Maru",
@@ -1076,7 +1341,10 @@
       "400",
       "500"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Koh Santepheap",
@@ -1090,7 +1358,10 @@
       "700",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Konkhmer Sleokchher",
@@ -1100,7 +1371,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Kosugi",
@@ -1110,7 +1385,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Koulen",
@@ -1120,7 +1398,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Lalezar",
@@ -1130,7 +1412,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Lateef",
@@ -1146,7 +1431,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "LINE Seed JP",
@@ -1159,7 +1447,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Lisu Bosa",
@@ -1184,7 +1475,10 @@
       "900",
       "900i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Liu Jian Mao Cao",
@@ -1194,7 +1488,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Long Cang",
@@ -1204,7 +1502,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "LXGW Marker Gothic",
@@ -1214,7 +1516,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "LXGW WenKai Mono TC",
@@ -1226,7 +1531,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "technical"
+    ]
   },
   {
     "family": "LXGW WenKai TC",
@@ -1238,7 +1546,11 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "M PLUS 1p",
@@ -1254,7 +1566,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Ma Shan Zheng",
@@ -1264,7 +1579,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Markazi Text",
@@ -1277,7 +1596,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Menbere",
@@ -1293,7 +1615,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Mingzat",
@@ -1303,7 +1628,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Miriam Libre",
@@ -1316,7 +1644,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Mirza",
@@ -1329,7 +1660,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Mochiy Pop One",
@@ -1339,7 +1673,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Mochiy Pop P One",
@@ -1349,7 +1686,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Monomaniac One",
@@ -1359,7 +1699,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern",
+      "technical"
+    ]
   },
   {
     "family": "Moul",
@@ -1369,7 +1713,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Moulpali",
@@ -1379,7 +1727,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Murecho",
@@ -1397,7 +1748,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Nanum Brush Script",
@@ -1407,7 +1761,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Nanum Gothic",
@@ -1419,7 +1777,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Nanum Gothic Coding",
@@ -1430,7 +1791,11 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Nanum Myeongjo",
@@ -1442,7 +1807,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Nanum Pen Script",
@@ -1452,7 +1820,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Narnoor",
@@ -1466,7 +1838,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "New Tegomin",
@@ -1476,7 +1851,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Nokora",
@@ -1494,7 +1872,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Kufi Arabic",
@@ -1512,7 +1893,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Naskh Arabic",
@@ -1525,7 +1909,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Nastaliq Urdu",
@@ -1538,7 +1925,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Rashi Hebrew",
@@ -1556,7 +1946,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Sans Adlam",
@@ -1569,7 +1962,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Adlam Unjoined",
@@ -1582,7 +1978,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Anatolian Hieroglyphs",
@@ -1592,7 +1991,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Arabic",
@@ -1610,7 +2012,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Armenian",
@@ -1628,7 +2033,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Avestan",
@@ -1638,7 +2046,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Balinese",
@@ -1651,7 +2062,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Bamum",
@@ -1664,7 +2078,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Bassa Vah",
@@ -1677,7 +2094,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Batak",
@@ -1687,7 +2107,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Bengali",
@@ -1705,7 +2128,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Bhaiksuki",
@@ -1715,7 +2141,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Brahmi",
@@ -1725,7 +2154,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Buginese",
@@ -1735,7 +2167,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Buhid",
@@ -1745,7 +2180,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Canadian Aboriginal",
@@ -1763,7 +2201,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Carian",
@@ -1773,7 +2214,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Caucasian Albanian",
@@ -1783,7 +2227,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Chakma",
@@ -1793,7 +2240,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Cham",
@@ -1811,7 +2261,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Cherokee",
@@ -1829,7 +2282,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Chorasmian",
@@ -1839,7 +2295,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Coptic",
@@ -1849,7 +2308,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Cuneiform",
@@ -1859,7 +2321,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Cypriot",
@@ -1869,7 +2334,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Cypro Minoan",
@@ -1879,7 +2347,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Deseret",
@@ -1889,7 +2360,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Devanagari",
@@ -1907,7 +2381,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Duployan",
@@ -1918,7 +2395,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Egyptian Hieroglyphs",
@@ -1928,7 +2408,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Elbasan",
@@ -1938,7 +2421,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Elymaic",
@@ -1948,7 +2434,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Ethiopic",
@@ -1966,7 +2455,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Georgian",
@@ -1984,7 +2476,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Glagolitic",
@@ -1994,7 +2489,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Gothic",
@@ -2004,7 +2502,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Grantha",
@@ -2014,7 +2515,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Gujarati",
@@ -2032,7 +2536,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Gunjala Gondi",
@@ -2045,7 +2552,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Gurmukhi",
@@ -2063,7 +2573,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Hanifi Rohingya",
@@ -2076,7 +2589,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Hanunoo",
@@ -2086,7 +2602,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Hatran",
@@ -2096,7 +2615,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Hebrew",
@@ -2114,7 +2636,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans HK",
@@ -2132,7 +2657,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Imperial Aramaic",
@@ -2142,7 +2670,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Inscriptional Pahlavi",
@@ -2152,7 +2683,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Inscriptional Parthian",
@@ -2162,7 +2696,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Javanese",
@@ -2175,7 +2712,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans JP",
@@ -2193,7 +2733,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Kaithi",
@@ -2203,7 +2746,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Kannada",
@@ -2221,7 +2767,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Kawi",
@@ -2234,7 +2783,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Kayah Li",
@@ -2247,7 +2799,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Kharoshthi",
@@ -2257,7 +2812,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Khmer",
@@ -2275,7 +2833,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Khojki",
@@ -2285,7 +2846,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Khudawadi",
@@ -2295,7 +2859,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans KR",
@@ -2313,7 +2880,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Lao",
@@ -2331,7 +2901,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Lao Looped",
@@ -2349,7 +2922,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Lepcha",
@@ -2359,7 +2935,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Limbu",
@@ -2369,7 +2948,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Linear A",
@@ -2379,7 +2961,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Linear B",
@@ -2389,7 +2974,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Lisu",
@@ -2402,7 +2990,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Lydian",
@@ -2412,7 +3003,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Mahajani",
@@ -2422,7 +3016,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Malayalam",
@@ -2440,7 +3037,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Mandaic",
@@ -2450,7 +3050,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Manichaean",
@@ -2460,7 +3063,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Marchen",
@@ -2470,7 +3076,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Masaram Gondi",
@@ -2480,7 +3089,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Medefaidrin",
@@ -2493,7 +3105,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Meetei Mayek",
@@ -2511,7 +3126,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Mende Kikakui",
@@ -2521,7 +3139,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Meroitic",
@@ -2531,7 +3152,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Miao",
@@ -2541,7 +3165,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Modi",
@@ -2551,7 +3178,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Mongolian",
@@ -2561,7 +3191,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Mro",
@@ -2571,7 +3204,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Multani",
@@ -2581,7 +3217,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Myanmar",
@@ -2599,7 +3238,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Nabataean",
@@ -2609,7 +3251,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Nag Mundari",
@@ -2622,7 +3267,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Nandinagari",
@@ -2632,7 +3280,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans New Tai Lue",
@@ -2645,7 +3296,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Newa",
@@ -2655,7 +3309,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans NKo",
@@ -2665,7 +3322,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans NKo Unjoined",
@@ -2678,7 +3338,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Nushu",
@@ -2688,7 +3351,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Ogham",
@@ -2698,7 +3364,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Ol Chiki",
@@ -2711,7 +3380,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Old Hungarian",
@@ -2721,7 +3393,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Old Italic",
@@ -2731,7 +3406,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Old North Arabian",
@@ -2741,7 +3419,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Old Permic",
@@ -2751,7 +3432,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Old Persian",
@@ -2761,7 +3445,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Old Sogdian",
@@ -2771,7 +3458,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Old South Arabian",
@@ -2781,7 +3471,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Old Turkic",
@@ -2791,7 +3484,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Oriya",
@@ -2809,7 +3505,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Osage",
@@ -2819,7 +3518,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Osmanya",
@@ -2829,7 +3531,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Pahawh Hmong",
@@ -2839,7 +3544,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Palmyrene",
@@ -2849,7 +3557,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Pau Cin Hau",
@@ -2859,7 +3570,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans PhagsPa",
@@ -2869,7 +3583,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Phoenician",
@@ -2879,7 +3596,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Psalter Pahlavi",
@@ -2889,7 +3609,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Rejang",
@@ -2899,7 +3622,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Runic",
@@ -2909,7 +3635,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Samaritan",
@@ -2919,7 +3648,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Saurashtra",
@@ -2929,7 +3661,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans SC",
@@ -2947,7 +3682,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Sharada",
@@ -2957,7 +3695,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Shavian",
@@ -2967,7 +3708,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Siddham",
@@ -2977,7 +3721,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Sinhala",
@@ -2995,7 +3742,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Sogdian",
@@ -3005,7 +3755,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Sora Sompeng",
@@ -3018,7 +3771,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Soyombo",
@@ -3028,7 +3784,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Sundanese",
@@ -3041,7 +3800,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Sunuwar",
@@ -3051,7 +3813,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Syloti Nagri",
@@ -3061,7 +3826,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Syriac",
@@ -3079,7 +3847,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Syriac Eastern",
@@ -3097,7 +3868,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Syriac Western",
@@ -3115,7 +3889,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Tagalog",
@@ -3125,7 +3902,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Tagbanwa",
@@ -3135,7 +3915,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Tai Le",
@@ -3145,7 +3928,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Tai Tham",
@@ -3158,7 +3944,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Tai Viet",
@@ -3168,7 +3957,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Takri",
@@ -3178,7 +3970,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Tamil",
@@ -3196,7 +3991,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Tamil Supplement",
@@ -3206,7 +4004,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Tangsa",
@@ -3219,7 +4020,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans TC",
@@ -3237,7 +4041,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Telugu",
@@ -3255,7 +4062,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Thaana",
@@ -3273,7 +4083,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Thai",
@@ -3291,7 +4104,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Thai Looped",
@@ -3309,7 +4125,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Tifinagh",
@@ -3319,7 +4138,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Tirhuta",
@@ -3329,7 +4151,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Ugaritic",
@@ -3339,7 +4164,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Vai",
@@ -3349,7 +4177,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Vithkuqi",
@@ -3362,7 +4193,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Wancho",
@@ -3372,7 +4206,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Warang Citi",
@@ -3382,7 +4219,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Yi",
@@ -3392,7 +4232,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Sans Zanabazar Square",
@@ -3402,7 +4245,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Noto Serif Ahom",
@@ -3412,7 +4258,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Armenian",
@@ -3430,7 +4279,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Balinese",
@@ -3440,7 +4292,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Bengali",
@@ -3458,7 +4313,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Devanagari",
@@ -3476,7 +4334,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Dives Akuru",
@@ -3486,7 +4347,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Dogra",
@@ -3496,7 +4360,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Ethiopic",
@@ -3514,7 +4381,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Georgian",
@@ -3532,7 +4402,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Grantha",
@@ -3542,7 +4415,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Gujarati",
@@ -3560,7 +4436,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Gurmukhi",
@@ -3578,7 +4457,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Hebrew",
@@ -3596,7 +4478,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Hentaigana",
@@ -3613,7 +4498,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif HK",
@@ -3630,7 +4518,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif JP",
@@ -3647,7 +4538,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Kannada",
@@ -3665,7 +4559,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Khitan Small Script",
@@ -3675,7 +4572,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Khmer",
@@ -3693,7 +4593,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Khojki",
@@ -3706,7 +4609,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif KR",
@@ -3723,7 +4629,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Lao",
@@ -3741,7 +4650,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Makasar",
@@ -3751,7 +4663,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Malayalam",
@@ -3769,7 +4684,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif NP Hmong",
@@ -3782,7 +4700,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Old Uyghur",
@@ -3792,7 +4713,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Oriya",
@@ -3805,7 +4729,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif SC",
@@ -3822,7 +4749,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Sinhala",
@@ -3840,7 +4770,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Tamil",
@@ -3867,7 +4800,10 @@
       "900",
       "900i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Tangut",
@@ -3877,7 +4813,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif TC",
@@ -3894,7 +4833,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Telugu",
@@ -3912,7 +4854,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Thai",
@@ -3930,7 +4875,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Tibetan",
@@ -3948,7 +4896,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Todhri",
@@ -3958,7 +4909,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Toto",
@@ -3971,7 +4925,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Vithkuqi",
@@ -3984,7 +4941,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Serif Yezidi",
@@ -3997,7 +4957,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Noto Traditional Nushu",
@@ -4011,7 +4974,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Nuosu SIL",
@@ -4021,7 +4987,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Odor Mean Chey",
@@ -4031,7 +5000,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Padauk",
@@ -4042,7 +5014,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Parastoo",
@@ -4055,7 +5030,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Playpen Sans Arabic",
@@ -4072,7 +5050,11 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Playpen Sans Deva",
@@ -4089,7 +5071,11 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Playpen Sans Hebrew",
@@ -4106,7 +5092,11 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Playpen Sans Thai",
@@ -4123,7 +5113,11 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Poor Story",
@@ -4133,7 +5127,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Potta One",
@@ -4143,7 +5141,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Preahvihear",
@@ -4153,7 +5155,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Qahiri",
@@ -4163,7 +5168,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Rampart One",
@@ -4173,7 +5181,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Readex Pro",
@@ -4188,7 +5200,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Reem Kufi",
@@ -4201,7 +5216,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Reem Kufi Fun",
@@ -4214,7 +5232,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Reem Kufi Ink",
@@ -4224,7 +5245,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Reggae One",
@@ -4234,7 +5258,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "RocknRoll One",
@@ -4244,7 +5272,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Ruwudu",
@@ -4257,7 +5288,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Sawarabi Gothic",
@@ -4267,7 +5301,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Sawarabi Mincho",
@@ -4277,7 +5314,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Scheherazade New",
@@ -4290,7 +5330,10 @@
       "600",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Shippori Antique",
@@ -4300,7 +5343,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Shippori Antique B1",
@@ -4310,7 +5356,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Shippori Mincho",
@@ -4324,7 +5373,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Shippori Mincho B1",
@@ -4338,7 +5390,10 @@
       "700",
       "800"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Slackside One",
@@ -4348,7 +5403,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Solitreo",
@@ -4358,7 +5417,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Stick",
@@ -4368,7 +5431,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Suwannaphum",
@@ -4382,7 +5448,10 @@
       "700",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Tai Heritage Pro",
@@ -4393,7 +5462,10 @@
       "400",
       "700"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Tajawal",
@@ -4409,7 +5481,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Taprom",
@@ -4419,7 +5494,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Tiro Bangla",
@@ -4430,7 +5509,10 @@
       "400",
       "400i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Tiro Devanagari Hindi",
@@ -4441,7 +5523,10 @@
       "400",
       "400i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Tiro Devanagari Marathi",
@@ -4452,7 +5537,10 @@
       "400",
       "400i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Tiro Devanagari Sanskrit",
@@ -4463,7 +5551,10 @@
       "400",
       "400i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Tiro Gurmukhi",
@@ -4474,7 +5565,10 @@
       "400",
       "400i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Tiro Kannada",
@@ -4485,7 +5579,10 @@
       "400",
       "400i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Tiro Tamil",
@@ -4496,7 +5593,10 @@
       "400",
       "400i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Tiro Telugu",
@@ -4507,7 +5607,10 @@
       "400",
       "400i"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "UoqMunThenKhung",
@@ -4517,7 +5620,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Vazirmatn",
@@ -4535,7 +5641,10 @@
       "800",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "WDXL Lubrifont JP N",
@@ -4545,7 +5654,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "WDXL Lubrifont SC",
@@ -4555,7 +5667,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "WDXL Lubrifont TC",
@@ -4565,7 +5680,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Yeon Sung",
@@ -4575,7 +5693,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "decorative",
+      "heading"
+    ]
   },
   {
     "family": "Yomogi",
@@ -4585,7 +5707,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Yuji Boku",
@@ -4595,7 +5721,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Yuji Hentaigana Akari",
@@ -4605,7 +5734,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Yuji Hentaigana Akebono",
@@ -4615,7 +5748,11 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   },
   {
     "family": "Yuji Mai",
@@ -4625,7 +5762,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Yuji Syuku",
@@ -4635,7 +5775,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "ZCOOL KuaiLe",
@@ -4645,7 +5788,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "ZCOOL QingKe HuangYou",
@@ -4655,7 +5801,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "ZCOOL XiaoWei",
@@ -4665,7 +5814,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Zen Antique",
@@ -4675,7 +5827,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Zen Antique Soft",
@@ -4685,7 +5840,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Zen Kaku Gothic Antique",
@@ -4699,7 +5857,10 @@
       "700",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Zen Kaku Gothic New",
@@ -4713,7 +5874,10 @@
       "700",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Zen Kurenaido",
@@ -4723,7 +5887,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Zen Maru Gothic",
@@ -4737,7 +5904,10 @@
       "700",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "modern"
+    ]
   },
   {
     "family": "Zen Old Mincho",
@@ -4751,7 +5921,10 @@
       "700",
       "900"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "formal"
+    ]
   },
   {
     "family": "Zhi Mang Xing",
@@ -4761,6 +5934,10 @@
     "variants": [
       "400"
     ],
-    "subsets": []
+    "subsets": [],
+    "tags": [
+      "casual",
+      "organic"
+    ]
   }
 ]

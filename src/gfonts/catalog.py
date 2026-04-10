@@ -21,6 +21,7 @@ class FontEntry(BaseModel):
     family: str
     category: str
     variants: list[str] = Field(default_factory=list)
+    tags: list[str] = Field(default_factory=list)
 
     @property
     def has_italic(self) -> bool:
@@ -128,6 +129,43 @@ class FontCatalog:
         """Return fonts for a specific script group (e.g. 'cjk', 'indic')."""
         group_lower = group.lower()
         return [f for f in self._scripts if f.script_group.lower() == group_lower]
+
+    def by_tag(self, tag: str) -> list[FontEntry | ScriptFontEntry]:
+        """Return all fonts matching a single tag (case-insensitive)."""
+        t = tag.lower()
+        results: list[FontEntry | ScriptFontEntry] = []
+        for f in self._allow:
+            if t in (x.lower() for x in f.tags):
+                results.append(f)
+        for f in self._scripts:
+            if t in (x.lower() for x in f.tags):
+                results.append(f)
+        return results
+
+    def by_tags(
+        self, tags: list[str], *, match_all: bool = False
+    ) -> list[FontEntry | ScriptFontEntry]:
+        """Return fonts matching any (or all, if *match_all*) of the given tags."""
+        tag_set = {t.lower() for t in tags}
+        results: list[FontEntry | ScriptFontEntry] = []
+        for f in [*self._allow, *self._scripts]:
+            font_tags = {t.lower() for t in f.tags}
+            if match_all:
+                if tag_set <= font_tags:
+                    results.append(f)
+            else:
+                if tag_set & font_tags:
+                    results.append(f)
+        return results
+
+    def all_tags(self) -> list[str]:
+        """Return sorted list of all unique tags in the catalog."""
+        tag_set: set[str] = set()
+        for f in self._allow:
+            tag_set.update(t.lower() for t in f.tags)
+        for f in self._scripts:
+            tag_set.update(t.lower() for t in f.tags)
+        return sorted(tag_set)
 
     def blacklisted(self) -> list[BlacklistEntry]:
         """Return all blacklisted fonts."""
