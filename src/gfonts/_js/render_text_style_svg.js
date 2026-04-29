@@ -24,6 +24,14 @@
   }
 
   var _originalStyle = JSON.parse(JSON.stringify(style));
+  // Serializes APPLY_STYLE messages so a new cycle waits for the prior
+  // render to finish before mutating shared state (`style`,
+  // `_originalStyle`, the SVG DOM). Without this, the in-flight render's
+  // measureText helpers would mid-flight see a hybrid of old + new style.
+  var _inflight = Promise.resolve();
+  // Tracks the latest gen requested. If a queued render starts but a
+  // newer one has been queued behind it, it skips work.
+  var _latestGen = window.__RENDER_GEN__ || 0;
 
   // ── resolve lines format if present ──────────────────────────────
   if (style.lines && !style.text) {
@@ -156,7 +164,12 @@
 
   // ── text measurement (via hidden canvas, same as canvas renderer) ─
 
-  function measureText(ctx, text, font, letterSpacing) {
+  // `s` is the style snapshot used by the calling render(); reads of
+  // font_size / font_style come from this snapshot (not the global
+  // `style`) so an in-flight render is immune to APPLY_STYLE mutating
+  // the global mid-await.
+  function measureText(ctx, text, font, letterSpacing, s) {
+    s = s || style;
     ctx.font = font;
     var chars = [];
     var charAdvanceSum = 0;
@@ -167,8 +180,8 @@
       charAdvanceSum += cw;
     }
     var full = ctx.measureText(text);
-    var ascent = full.actualBoundingBoxAscent || (style.font_size * 0.8);
-    var descent = full.actualBoundingBoxDescent || (style.font_size * 0.2);
+    var ascent = full.actualBoundingBoxAscent || (s.font_size * 0.8);
+    var descent = full.actualBoundingBoxDescent || (s.font_size * 0.2);
 
     // Use the larger of per-char sum and full-text width (which includes kerning)
     // as the baseline. Per-char sum is still used for character positioning.
@@ -177,11 +190,9 @@
 
     var rightOverhang = 0;
     var leftOverhang = 0;
-    // Ink coverage from the full text can extend past the advance width
     if (full.actualBoundingBoxRight !== undefined) {
       rightOverhang = Math.max(0, full.actualBoundingBoxRight - fullTextWidth);
     }
-    // Last character can extend past its advance width (italic slant, glyph shape)
     if (text.length > 0) {
       var lastM = ctx.measureText(text[text.length - 1]);
       if (lastM.actualBoundingBoxRight !== undefined) {
@@ -191,9 +202,7 @@
     if (full.actualBoundingBoxLeft !== undefined && full.actualBoundingBoxLeft > 0) {
       leftOverhang = Math.max(leftOverhang, full.actualBoundingBoxLeft);
     }
-    // Synthetic italic: browsers may not report accurate bounding boxes for
-    // oblique-synthesized text. Add ~tan(14°)×ascent as safety margin.
-    var isItalic = (style.font_style === 'italic');
+    var isItalic = (s.font_style === 'italic');
     if (isItalic) {
       var italicExtra = Math.ceil(ascent * 0.25);
       rightOverhang = Math.max(rightOverhang, italicExtra);
@@ -210,12 +219,13 @@
     };
   }
 
-  function measureLines(ctx, lines, font, letterSpacing, lineHeight, lineFontSizes, lineScaleY, lineLetterSpacings) {
+  function measureLines(ctx, lines, font, letterSpacing, lineHeight, lineFontSizes, lineScaleY, lineLetterSpacings, s) {
+    s = s || style;
     var lineMetrics = [];
     var maxWidth = 0;
     var maxRightOverhang = 0;
     var maxLeftOverhang = 0;
-    var fontSize = style.font_size || 100;
+    var fontSize = s.font_size || 100;
     var lineHeightMult = lineHeight || 1.2;
     var lineHeights = [];
     var lineYOffsets = [];
@@ -224,9 +234,9 @@
     if (lineFontSizes && lineFontSizes.length === lines.length) {
       for (var i = 0; i < lines.length; i++) {
         var lfs = lineFontSizes[i];
-        var lfFont = (style.font_style === 'italic' ? 'italic ' : '') + (style.font_weight || 400) + ' ' + lfs + 'px "' + (style.font_family || 'Lato') + '"';
+        var lfFont = (s.font_style === 'italic' ? 'italic ' : '') + (s.font_weight || 400) + ' ' + lfs + 'px "' + (s.font_family || 'Lato') + '"';
         var effLS = (lineLetterSpacings && lineLetterSpacings[i] != null) ? lineLetterSpacings[i] : letterSpacing;
-        var m = measureText(ctx, lines[i], lfFont, effLS);
+        var m = measureText(ctx, lines[i], lfFont, effLS, s);
         lineMetrics.push(m);
         if (m.totalWidth > maxWidth) maxWidth = m.totalWidth;
         if (m.rightOverhang > maxRightOverhang) maxRightOverhang = m.rightOverhang;
@@ -249,7 +259,7 @@
     ctx.font = font;
     for (var i2 = 0; i2 < lines.length; i2++) {
       var effLS2 = (lineLetterSpacings && lineLetterSpacings[i2] != null) ? lineLetterSpacings[i2] : letterSpacing;
-      var m2 = measureText(ctx, lines[i2], font, effLS2);
+      var m2 = measureText(ctx, lines[i2], font, effLS2, s);
       lineMetrics.push(m2);
       if (m2.totalWidth > maxWidth) maxWidth = m2.totalWidth;
       if (m2.rightOverhang > maxRightOverhang) maxRightOverhang = m2.rightOverhang;
@@ -264,60 +274,24 @@
   // ── padding / bounds ──────────────────────────────────────────────
 
   function computePadding(s) {
-    var pad = 10;
-    if (s.outlines) {
+    // Filter effects (drop_shadow, outer_glow, inner_*) intentionally
+    // overflow the bbox — every layer in the stack is overflow:visible.
+    // Extrusion is real geometry, already in getBBox().
+    //
+    // Outlines are the one exception: rendered as centered strokes on
+    // <text>, but Chromium's getBBox() returns the FILL box and ignores
+    // stroke. Half the stroke width extends past the glyph extent on
+    // each side, so we reserve that much margin in the viewBox or wide
+    // pill-style outlines get clipped at the iframe edge.
+    var pad = 2;
+    if (s && s.outlines) {
       for (var i = 0; i < s.outlines.length; i++) {
-        pad = Math.max(pad, Math.ceil(s.outlines[i].width) + 4);
-      }
-    }
-    var shadows = (s.drop_shadows && s.drop_shadows.length) ? s.drop_shadows : (s.drop_shadow ? [s.drop_shadow] : []);
-    for (var si = 0; si < shadows.length; si++) {
-      var ds = shadows[si];
-      var spreadVal = ds.spread != null ? ds.spread : 0;
-      pad = Math.max(pad, Math.ceil(Math.abs(ds.offset_x) + ds.blur + Math.abs(spreadVal)) + 6);
-      pad = Math.max(pad, Math.ceil(Math.abs(ds.offset_y) + ds.blur + Math.abs(spreadVal)) + 6);
-    }
-    if (s.outer_glow) {
-      var g = s.outer_glow;
-      pad = Math.max(pad, Math.ceil(g.radius * g.strength) + 10);
-    }
-    if (s.extrusion) {
-      pad = Math.max(pad, Math.ceil(s.extrusion.depth) + 10);
-    }
-    // Per-letter transforms (jitter, overrides) can push chars beyond measured bounds
-    var transformPad = 0;
-    var src = _originalStyle || s;
-    var jit = src.jitter;
-    if (src.lines) {
-      for (var li = 0; li < src.lines.length; li++) {
-        var lj = src.lines[li].jitter || jit;
-        if (lj) {
-          transformPad = Math.max(transformPad,
-            (lj.x_offset || 0) + (lj.y_offset || 0) +
-            Math.ceil(((lj.scale || 1) - 1) * (s.font_size || 100) * 0.5));
-          if (lj.rotation) transformPad = Math.max(transformPad, Math.ceil(lj.rotation * 0.5));
-        }
-      }
-    } else if (jit) {
-      transformPad = Math.max(transformPad,
-        (jit.x_offset || 0) + (jit.y_offset || 0) +
-        Math.ceil(((jit.scale || 1) - 1) * (s.font_size || 100) * 0.5));
-      if (jit.rotation) transformPad = Math.max(transformPad, Math.ceil(jit.rotation * 0.5));
-    }
-    if (s.letter_overrides) {
-      for (var oi = 0; oi < s.letter_overrides.length; oi++) {
-        var ov = s.letter_overrides[oi];
-        if (ov.outline && ov.outline.width != null) {
-          pad = Math.max(pad, Math.ceil(ov.outline.width) + 4);
-        }
-        transformPad = Math.max(transformPad,
-          Math.abs(ov.x_offset || 0), Math.abs(ov.y_offset || 0));
-        if (ov.scale && ov.scale > 1) {
-          transformPad = Math.max(transformPad, Math.ceil((ov.scale - 1) * (s.font_size || 100) * 0.5));
+        var w = s.outlines[i] && s.outlines[i].width;
+        if (typeof w === 'number' && w > 0) {
+          pad = Math.max(pad, Math.ceil(w / 2) + 2);
         }
       }
     }
-    pad = Math.max(pad, pad + Math.ceil(transformPad));
     return pad;
   }
 
@@ -397,10 +371,26 @@
 
   // ── SVG filter creation ───────────────────────────────────────────
 
-  function createDropShadowFilter(defs, shadow) {
+  // Filter regions use filterUnits="userSpaceOnUse" with absolute pixel bounds
+  // (svg canvas + per-effect halo extent). The previous percentage-based
+  // objectBoundingBox region clipped halos to ~1.5x the bbox short axis, which
+  // produced sharp rectangular cutoffs for large blur radii on tight text.
+  function createDropShadowFilter(defs, shadow, svgW, svgH) {
     var id = uid('dsf');
     var filter = svgEl('filter');
-    setAttrs(filter, { id: id, x: '-100%', y: '-100%', width: '400%', height: '400%' });
+
+    var spreadVal = shadow.spread != null ? shadow.spread : 0;
+    var extX = Math.ceil(Math.abs(shadow.offset_x) + shadow.blur * 3 + Math.abs(spreadVal)) + 6;
+    var extY = Math.ceil(Math.abs(shadow.offset_y) + shadow.blur * 3 + Math.abs(spreadVal)) + 6;
+    var ext = Math.max(extX, extY);
+    setAttrs(filter, {
+      id: id,
+      filterUnits: 'userSpaceOnUse',
+      x: -ext,
+      y: -ext,
+      width: svgW + 2 * ext,
+      height: svgH + 2 * ext,
+    });
 
     var blur = svgEl('feGaussianBlur');
     setAttrs(blur, { 'in': 'SourceGraphic', stdDeviation: shadow.blur, result: 'blur' });
@@ -410,10 +400,19 @@
     return id;
   }
 
-  function createOuterGlowFilter(defs, glow) {
+  function createOuterGlowFilter(defs, glow, svgW, svgH) {
     var id = uid('ogf');
     var filter = svgEl('filter');
-    setAttrs(filter, { id: id, x: '-100%', y: '-100%', width: '400%', height: '400%' });
+
+    var ext = Math.ceil(glow.radius * 3 + glow.radius * Math.max(0, glow.strength - 1)) + 10;
+    setAttrs(filter, {
+      id: id,
+      filterUnits: 'userSpaceOnUse',
+      x: -ext,
+      y: -ext,
+      width: svgW + 2 * ext,
+      height: svgH + 2 * ext,
+    });
 
     var blur = svgEl('feGaussianBlur');
     setAttrs(blur, { 'in': 'SourceGraphic', stdDeviation: glow.radius, result: 'blur' });
@@ -788,8 +787,66 @@
 
   // ── main render ───────────────────────────────────────────────────
 
+  // Cap shadow offsets to a fraction of font_size so a runaway LLM output
+  // can never render the text into an illegible smear. Mutates in place.
+  // Each offset axis is independently clamped (matches the way the LLM authors them).
+  var SHADOW_OFFSET_MAX_FRAC = 0.125;
+  function clampShadowOffsets(s) {
+    var fs = s.font_size || 100;
+    var maxOffset = fs * SHADOW_OFFSET_MAX_FRAC;
+    function clampOne(sh) {
+      if (!sh) return;
+      if (typeof sh.offset_x === 'number') {
+        sh.offset_x = Math.max(-maxOffset, Math.min(maxOffset, sh.offset_x));
+      }
+      if (typeof sh.offset_y === 'number') {
+        sh.offset_y = Math.max(-maxOffset, Math.min(maxOffset, sh.offset_y));
+      }
+    }
+    clampOne(s.drop_shadow);
+    if (Array.isArray(s.drop_shadows)) {
+      for (var i = 0; i < s.drop_shadows.length; i++) clampOne(s.drop_shadows[i]);
+    }
+    clampOne(s.inner_shadow);
+  }
+
+  // Hard-cap glow parameters so a runaway LLM value can never bleed across
+  // the entire bbox. Three failure modes get clamped here:
+  //   1. radius > a few % of font_size → spreads ~3R px past every glyph and
+  //      saturates all inter-glyph negative space.
+  //   2. strength > 1 → feMerge stacks N blur copies and turns a soft halo
+  //      into an opaque colored mass.
+  //   3. opacity ~1 → leaves no falloff for the eye to read as a glow.
+  // Mutates in place.
+  var GLOW_RADIUS_MAX_FRAC = 0.03;
+  var GLOW_RADIUS_HARD_CAP_PX = 6;
+  var GLOW_OPACITY_MAX = 0.5;
+  function clampGlow(g, fontSize) {
+    if (!g) return;
+    var fs = fontSize || 100;
+    var maxRadius = Math.max(1, Math.min(GLOW_RADIUS_HARD_CAP_PX, fs * GLOW_RADIUS_MAX_FRAC));
+    if (typeof g.radius !== 'number' || !(g.radius > 0) || g.radius > maxRadius) {
+      g.radius = maxRadius;
+    }
+    if (typeof g.strength !== 'number' || !(g.strength > 0) || g.strength > 1) {
+      g.strength = 1;
+    }
+    if (typeof g.opacity !== 'number' || !(g.opacity >= 0)) {
+      g.opacity = GLOW_OPACITY_MAX;
+    } else if (g.opacity > GLOW_OPACITY_MAX) {
+      g.opacity = GLOW_OPACITY_MAX;
+    }
+  }
+  function clampGlows(s) {
+    var fs = s.font_size || 100;
+    clampGlow(s.outer_glow, fs);
+    clampGlow(s.inner_glow, fs);
+  }
+
   async function render() {
     var s = style;
+    clampShadowOffsets(s);
+    clampGlows(s);
     var rawText = applyTextTransform(s.text || 'SAMPLE', s.text_transform || 'none');
     var font = buildFontString(s);
     var pad = computePadding(s);
@@ -815,7 +872,7 @@
     var tmpCtx = tmpCanvas.getContext('2d');
     tmpCtx.font = font;
 
-    var multiMetrics = measureLines(tmpCtx, lines, font, letterSpacing, s.line_height, s.line_font_sizes, s.line_scale_y, lineLetterSpacings);
+    var multiMetrics = measureLines(tmpCtx, lines, font, letterSpacing, s.line_height, s.line_font_sizes, s.line_scale_y, lineLetterSpacings, s);
 
     var extraLeft = Math.ceil(multiMetrics.leftOverhang);
     var extraRight = Math.ceil(multiMetrics.rightOverhang);
@@ -885,6 +942,7 @@
       width: svgW,
       height: svgH,
       viewBox: '0 0 ' + svgW + ' ' + svgH,
+      overflow: 'visible',
     });
 
     var defs = svgEl('defs');
@@ -1246,7 +1304,7 @@
     var dropShadows = (s.drop_shadows && s.drop_shadows.length) ? s.drop_shadows : (s.drop_shadow ? [s.drop_shadow] : []);
     for (var dsi = 0; dsi < dropShadows.length; dsi++) {
       var ds = dropShadows[dsi];
-      var dsFilterId = createDropShadowFilter(defs, ds);
+      var dsFilterId = createDropShadowFilter(defs, ds, svgW, svgH);
       var dsColor = hexToRgba(ds.color, ds.opacity);
       var dsGroup = makeRawFillGroup(dsColor, ds.offset_x, ds.offset_y);
       dsGroup.setAttribute('data-layer', 'drop-shadow');
@@ -1259,7 +1317,7 @@
 
     if (s.outer_glow) {
       var og = s.outer_glow;
-      var ogFilterId = createOuterGlowFilter(defs, og);
+      var ogFilterId = createOuterGlowFilter(defs, og, svgW, svgH);
       var ogGroup = makeRawFillGroup(og.color, 0, 0);
       ogGroup.setAttribute('data-layer', 'outer-glow');
       ogGroup.setAttribute('filter', 'url(#' + ogFilterId + ')');
@@ -1318,7 +1376,7 @@
     // Resize SVG to fit actual rendered content (handles italic overshoot,
     // per-letter transforms, jitter, etc. that extend beyond measured bounds)
     var bbox = rootG.getBBox();
-    var bboxMargin = 4;
+    var bboxMargin = Math.max(4, pad);
     var needLeft = Math.min(0, bbox.x - bboxMargin);
     var needTop = Math.min(0, bbox.y - bboxMargin);
     var needRight = Math.max(svgW, bbox.x + bbox.width + bboxMargin);
@@ -1335,52 +1393,331 @@
       svgH = fitH;
     }
 
-    document.title = 'DONE:' + svgW + ':' + svgH;
+    return { width: svgW, height: svgH };
   }
 
   // ── font embedding ────────────────────────────────────────────────
 
+  async function fetchWithRetry(url, retries) {
+    for (var attempt = 0; attempt <= retries; attempt++) {
+      try {
+        var res = await fetch(url);
+        if (res.ok) return res;
+      } catch (e) {}
+      if (attempt < retries) await new Promise(function(r) { setTimeout(r, 300); });
+    }
+    return null;
+  }
+
+  var _fontCache = (typeof window !== 'undefined' && window.__FONT_CACHE__) || {};
+  if (typeof window !== 'undefined') window.__FONT_CACHE__ = _fontCache;
+
   async function embedFontData(styleEl, family, weight, fontStyle) {
+    var cacheKey = family + ':' + weight + ':' + fontStyle;
+    if (_fontCache[cacheKey]) {
+      styleEl.textContent = _fontCache[cacheKey];
+      return;
+    }
+
     var encoded = family.replace(/ /g, '+');
     var italStr = fontStyle === 'italic' ? '1' : '0';
-    var url = 'https://fonts.googleapis.com/css2?family=' + encoded
+    var cssUrl = 'https://fonts.googleapis.com/css2?family=' + encoded
       + ':ital,wght@' + italStr + ',' + weight + '&display=swap';
 
-    try {
-      var res = await fetch(url);
-      var css = await res.text();
-
-      var urlPattern = /url\((https:\/\/fonts\.gstatic\.com\/[^\)]+\.woff2)\)/g;
-      var urls = [];
-      var m;
-      while ((m = urlPattern.exec(css)) !== null) urls.push(m[1]);
-
-      for (var i = 0; i < urls.length; i++) {
-        var fontRes = await fetch(urls[i]);
-        var buf = await fontRes.arrayBuffer();
-        var bytes = new Uint8Array(buf);
-        var binary = '';
-        for (var j = 0; j < bytes.length; j++) binary += String.fromCharCode(bytes[j]);
-        css = css.split('url(' + urls[i] + ')').join("url('data:font/woff2;base64," + btoa(binary) + "')");
-      }
-
-      styleEl.textContent = css;
-    } catch (e) {
+    var cssRes = await fetchWithRetry(cssUrl, 2);
+    if (!cssRes) {
       var fallback = '@import url("https://fonts.googleapis.com/css2?family='
         + encoded
         + ':ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900'
         + ';1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");';
       styleEl.textContent = fallback;
+      return;
+    }
+
+    var css = await cssRes.text();
+    var urlPattern = /url\((https:\/\/fonts\.gstatic\.com\/[^\)]+\.woff2)\)/g;
+    var urls = [];
+    var m;
+    while ((m = urlPattern.exec(css)) !== null) urls.push(m[1]);
+
+    for (var i = 0; i < urls.length; i++) {
+      var fontRes = await fetchWithRetry(urls[i], 2);
+      if (!fontRes) continue;
+      try {
+        var buf = await fontRes.arrayBuffer();
+        var bytes = new Uint8Array(buf);
+        var chunkSize = 8192;
+        var binary = '';
+        for (var j = 0; j < bytes.length; j += chunkSize) {
+          binary += String.fromCharCode.apply(null, bytes.subarray(j, j + chunkSize));
+        }
+        css = css.split('url(' + urls[i] + ')').join(
+          "url('data:font/woff2;base64," + btoa(binary) + "')"
+        );
+      } catch (e) {}
+    }
+
+    _fontCache[cacheKey] = css;
+    styleEl.textContent = css;
+  }
+
+  // ── auto-size ladder ──────────────────────────────────────────────
+
+  // Returns the inner <g> that wraps the rendered ink. We measure ink
+  // bounds via SVG getBBox() rather than a pixel-scan because the
+  // renderer already knows the geometry — getBBox is O(1)-ish, and it
+  // correctly reflects warp/rotation/extrusion/effect extents that the
+  // pre-render measureText() cannot see.
+  function getRootG() {
+    var svg = document.getElementById('output');
+    return svg ? svg.querySelector('g') : null;
+  }
+
+  function removePriorSvg() {
+    var prev = document.getElementById('output');
+    if (prev && prev.parentNode) prev.parentNode.removeChild(prev);
+  }
+
+  function countLinesIn(s) {
+    if (s && s.lines && Array.isArray(s.lines)) return s.lines.length;
+    var t = (s && s.text) || '';
+    return t.split(/\r?\n/).length;
+  }
+
+  // Phase A: maximise font_size such that ink fits both axes.
+  // One proportional Newton step per iteration; bails on tolerance,
+  // clamp, or hitting the 3-iteration cap.
+  async function fitFontSize(myGen, containerW, containerH) {
+    var FONT_FIT_TOL = 0.02;          // 2% close enough
+    var MAX_FONT_ITERS = 3;
+    var lastResult = null;
+    for (var i = 0; i < MAX_FONT_ITERS; i++) {
+      var rg = getRootG();
+      if (!rg) break;
+      var bb = null;
+      try { bb = rg.getBBox(); } catch (e) { break; }
+      if (!bb || bb.width <= 0 || bb.height <= 0) break;
+      var scaleW = containerW / bb.width;
+      var scaleH = containerH / bb.height;
+      var scale = Math.min(scaleW, scaleH);
+      if (Math.abs(scale - 1) < FONT_FIT_TOL) break;
+      var refFS = style.font_size || 100;
+      var nextFS = Math.max(10, Math.min(600, Math.round(refFS * scale)));
+      if (nextFS === refFS) break;
+      style.font_size = nextFS;
+      window.__TEXT_STYLE__.font_size = nextFS;
+      removePriorSvg();
+      lastResult = await render();
+      if ((window.__RENDER_GEN__ || 0) !== myGen) return null;
+    }
+    return lastResult;
+  }
+
+  // Phase B: tighten line_height when multi-line text is held back by
+  // height. Each tighten lets Phase A grow font_size, so we re-run it.
+  async function tightenLineHeight(myGen, containerW, containerH) {
+    if (countLinesIn(style) <= 1) return null;
+    var LH_FLOOR = 0.85;
+    var MAX_LH_ITERS = 2;
+    var lastResult = null;
+    for (var i = 0; i < MAX_LH_ITERS; i++) {
+      var rg = getRootG();
+      if (!rg) break;
+      var bb = null;
+      try { bb = rg.getBBox(); } catch (e) { break; }
+      if (!bb || bb.width <= 0 || bb.height <= 0) break;
+      var heightBound = (containerH / bb.height) < (containerW / bb.width);
+      if (!heightBound) break;
+      var lhMult = style.line_height || 1.2;
+      if (lhMult <= LH_FLOOR) break;
+      var target = lhMult * (containerH / bb.height);
+      var newLh = Math.max(LH_FLOOR, target);
+      if (Math.abs(newLh - lhMult) < 0.01) break;
+      style.line_height = newLh;
+      window.__TEXT_STYLE__.line_height = newLh;
+      removePriorSvg();
+      lastResult = await render();
+      if ((window.__RENDER_GEN__ || 0) !== myGen) return null;
+      // Recover font_size growth at the new line_height.
+      var grown = await fitFontSize(myGen, containerW, containerH);
+      if ((window.__RENDER_GEN__ || 0) !== myGen) return null;
+      if (grown) lastResult = grown;
+    }
+    return lastResult;
+  }
+
+  // Phase C: final viewBox + preserveAspectRatio.
+  //   - Headlines, when width-bound: par="none" so Y stretches to fill
+  //     vertical slack. X stays locked at Phase A's natural scale
+  //     because vbW tightly wraps the ink (scaleX = divW/vbW remains
+  //     the value Phase A picked).
+  //   - Everything else: par="<align>YMid meet" — letterboxes inside
+  //     the bbox at Phase A's scale, no distortion.
+  function applyPhaseC(isHeadline, containerW, containerH) {
+    var svg = document.getElementById('output');
+    if (!svg) return;
+    var rootGEl = svg.querySelector('g');
+    if (!rootGEl) return;
+    var bb = null;
+    try { bb = rootGEl.getBBox(); } catch (e) { return; }
+    if (!bb || bb.width <= 0 || bb.height <= 0) return;
+
+    var pad = computePadding(style);
+    var margin = Math.max(2, pad);
+    var vbX = bb.x - margin;
+    var vbY = bb.y - margin;
+    var vbW = bb.width + margin * 2;
+    var vbH = bb.height + margin * 2;
+
+    svg.style.position = 'absolute';
+    svg.style.top = '0';
+    svg.style.left = '0';
+    svg.setAttribute('width', '100%');
+    svg.setAttribute('height', '100%');
+    svg.setAttribute('overflow', 'visible');
+
+    var widthBound = false;
+    if (containerW > 0 && containerH > 0) {
+      var scaleW = containerW / vbW;
+      var scaleH = containerH / vbH;
+      // Width-bound when scaleW <= scaleH; the tighter axis governs
+      // par="meet". Headlines with this state get Y-only stretch.
+      widthBound = scaleW <= scaleH;
+    }
+
+    if (isHeadline && widthBound) {
+      // Cap the Y-stretch ratio so glyphs don't go grotesquely tall
+      // when the bbox is much taller than the text needs. We achieve
+      // the cap by inflating vbH (centered around the ink) so the
+      // unused vertical space becomes padding instead of stretch.
+      var MAX_Y_STRETCH = 2.0;
+      if (containerW > 0 && containerH > 0 && vbW > 0 && vbH > 0) {
+        var scaleX = containerW / vbW;
+        var scaleY = containerH / vbH;
+        if (scaleX > 0 && scaleY / scaleX > MAX_Y_STRETCH) {
+          var cappedVbH = containerH / (scaleX * MAX_Y_STRETCH);
+          if (isFinite(cappedVbH) && cappedVbH > vbH) {
+            vbY -= (cappedVbH - vbH) / 2;
+            vbH = cappedVbH;
+          }
+        }
+      }
+      svg.setAttribute('viewBox', vbX + ' ' + vbY + ' ' + vbW + ' ' + vbH);
+      svg.setAttribute('preserveAspectRatio', 'none');
+    } else {
+      var align = style.align || 'center';
+      var alignParam = align === 'left' ? 'xMin' : align === 'right' ? 'xMax' : 'xMid';
+      svg.setAttribute('viewBox', vbX + ' ' + vbY + ' ' + vbW + ' ' + vbH);
+      svg.setAttribute('preserveAspectRatio', alignParam + 'YMid meet');
     }
   }
 
   // ── entry point ───────────────────────────────────────────────────
 
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(function () {
-      setTimeout(render, 100);
+  async function runWithSizing() {
+    var myGen = window.__RENDER_GEN__ || 0;
+    // Drop if a newer cycle has been queued behind us. Saves the cost
+    // of this whole render+layout pass.
+    if (_latestGen !== myGen) return;
+    var containerW = window.__CONTAINER_WIDTH__ || 0;
+    var containerH = window.__CONTAINER_HEIGHT__ || 0;
+    var isHeadline = window.__IS_HEADLINE__ === true;
+    // When the parent has clamped the font size as part of a tier-grouped
+    // sizing pass (so multiple body elements share a baseline), skip the
+    // auto-fit and line-height tighten phases. Phase C still runs so the
+    // glyphs are letterboxed inside the bbox.
+    var lockFontSize = !!(style && style.lock_font_size);
+
+    var result = await render();
+    if ((window.__RENDER_GEN__ || 0) !== myGen) return;
+
+    if (!lockFontSize && containerW > 0 && containerH > 0) {
+      var phaseAResult = await fitFontSize(myGen, containerW, containerH);
+      if ((window.__RENDER_GEN__ || 0) !== myGen) return;
+      if (phaseAResult) result = phaseAResult;
+
+      var phaseBResult = await tightenLineHeight(myGen, containerW, containerH);
+      if ((window.__RENDER_GEN__ || 0) !== myGen) return;
+      if (phaseBResult) result = phaseBResult;
+    }
+
+    applyPhaseC(isHeadline, containerW, containerH);
+
+    var w = result ? result.width : 0;
+    var h = result ? result.height : 0;
+    try { window.parent.postMessage({ type: 'TEXT_RENDER_DONE', gen: myGen, width: w, height: h }, '*'); } catch(e2) {}
+    document.title = 'DONE:' + myGen + ':' + w + ':' + h;
+  }
+
+  // Re-render in place when the parent posts a new TextStyle. Cycles
+  // are serialised through `_inflight` so a new APPLY_STYLE waits for
+  // the prior render to settle before mutating shared state. Newer
+  // requests skip the queued render via `_latestGen` if a still-newer
+  // request lands while they were waiting.
+  function applyNewStyle(newStyle, opts) {
+    opts = opts || {};
+    if (!newStyle) return;
+    var thisGen = (typeof opts.gen === 'number')
+      ? opts.gen
+      : (_latestGen + 1);
+    _latestGen = thisGen;
+
+    _inflight = _inflight.then(async function () {
+      // A newer cycle was queued behind us before we got the slot;
+      // skip the whole render so we don't waste work.
+      if (_latestGen !== thisGen) return;
+
+      var s = newStyle;
+      if (s.lines && !s.text) {
+        try { s = FontStyleUtils.resolveLines(s); } catch (e) {}
+      }
+      style = s;
+      window.__TEXT_STYLE__ = s;
+      // Refresh the snapshot used by computePadding (jitter/per-letter
+      // pad math) and metadata export. Without this, cycling to a new
+      // style with different jitter would compute padding from the
+      // ORIGINAL load-time style.
+      _originalStyle = JSON.parse(JSON.stringify(s));
+
+      if (typeof opts.containerWidth === 'number') {
+        window.__CONTAINER_WIDTH__ = opts.containerWidth;
+      }
+      if (typeof opts.containerHeight === 'number') {
+        window.__CONTAINER_HEIGHT__ = opts.containerHeight;
+      }
+      if (typeof opts.isHeadline === 'boolean') {
+        window.__IS_HEADLINE__ = opts.isHeadline;
+      }
+      window.__RENDER_GEN__ = thisGen;
+
+      removePriorSvg();
+      try { document.title = ''; } catch (e) {}
+      await runWithSizing();
+    }).catch(function (e) {
+      try { console.warn('applyNewStyle failed:', e); } catch (_) {}
     });
+  }
+
+  window.addEventListener('message', function (e) {
+    if (!e.data || e.data.type !== 'APPLY_STYLE') return;
+    applyNewStyle(e.data.style, {
+      containerWidth: e.data.containerWidth,
+      containerHeight: e.data.containerHeight,
+      isHeadline: e.data.isHeadline,
+      gen: e.data.gen,
+    });
+  });
+
+  // Initial render: serialise through the same inflight chain so an
+  // APPLY_STYLE that arrives before the first render finishes is
+  // queued behind it (rather than racing the DOM).
+  function bootstrap() {
+    _inflight = _inflight.then(function () { return runWithSizing(); })
+      .catch(function (e) { try { console.warn('bootstrap render failed:', e); } catch (_) {} });
+  }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () { setTimeout(bootstrap, 100); });
   } else {
-    setTimeout(render, 500);
+    setTimeout(bootstrap, 500);
   }
 })();
